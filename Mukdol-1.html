@@ -224,5 +224,195 @@ html{scroll-behavior:smooth}button,summary,a{-webkit-tap-highlight-color:transpa
  root.addEventListener('dragstart',function(event){if(protectedPicture(event))event.preventDefault()},true);
 })();
 </script>
+  <!-- ===== Mukdol desktop compact patch START ===== -->
+<style id="mukdol-desktop-compact-fix">
+/*
+  목표
+  - 모바일(600px 이하)은 기존 디자인 그대로 유지
+  - 데스크탑은 화면을 억지로 채우지 않고 가운데 '책 한 권'처럼 배치
+  - 650px 이상에서 강제로 생기던 묵돌 소개 2열 제거
+  - 벗들 3열 제거, PC에서는 2열로 정돈
+  - 상단 메뉴가 좌우 끝까지 흩어지지 않게 중앙 밀집
+  - 묵돌 한마디 / 말걸기 / 본문 폭 과확장 방지
+*/
+
+@media (min-width: 601px) {
+  /* 전체 종이 폭: 넓은 화면에서도 더 이상 늘어나지 않음 */
+  body {
+    overflow-x: hidden;
+  }
+
+  .yadam {
+    width: min(720px, calc(100% - 40px));
+    max-width: 720px !important;
+    margin: 28px auto !important;
+  }
+
+  /* 상단 바로가기: space-around 해제 */
+  .yadam .quick-nav {
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 10px 14px !important;
+  }
+
+  .yadam .quick-nav :is(a, button) {
+    flex: 0 0 auto;
+    min-width: 64px;
+    padding: 5px 11px !important;
+  }
+
+  /* 기존 650px 이상 묵돌 소개 2열 규칙 무효화 */
+  .yadam .mukdol-layout {
+    display: block !important;
+  }
+
+  /* 묵돌 소개는 중앙에 촘촘하게 */
+  .yadam .revealed-intro .main-portrait,
+  .yadam .main-portrait {
+    width: min(100%, 420px) !important;
+    max-width: 420px !important;
+    margin: 0 auto 24px !important;
+  }
+
+  .yadam .revealed-intro .name-row,
+  .yadam .character-copy {
+    width: min(100%, 560px);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yadam .character-copy {
+    font-size: 14px !important;
+  }
+
+  /* '묵돌이 한마디'가 PC에서 거대해지지 않도록 */
+  .yadam .mukdol-quote {
+    width: min(100%, 520px);
+    max-width: 520px;
+    margin: 23px auto 0 !important;
+    padding: 19px 20px !important;
+    font-size: 20px !important;
+    line-height: 1.8 !important;
+  }
+
+  .yadam .talk {
+    width: min(100%, 520px);
+    max-width: 520px;
+    margin: 14px auto 18px !important;
+  }
+
+  .yadam .aside {
+    width: min(100%, 560px);
+    max-width: 560px;
+    margin: 25px auto 0 !important;
+  }
+
+  /* 친구 카드: PC에서 3열로 찌그러지지 않게 2열 */
+  .yadam .cast-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px 20px !important;
+    width: min(100%, 600px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  .yadam .cast-card {
+    min-width: 0;
+  }
+
+  /* 놀거리도 너무 벌어지지 않게 */
+  .yadam .commands {
+    width: min(100%, 600px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 상자/소개 콘텐츠도 중앙 폭 유지 */
+  .yadam .bundle {
+    width: min(100%, 620px);
+    max-width: 620px !important;
+  }
+
+  .yadam .author-note .author-body {
+    max-width: 600px !important;
+  }
+
+  /* 데스크탑이라고 표지가 갑자기 커지는 기존 650px 규칙 완화 */
+  .yadam .cover {
+    min-height: 600px !important;
+    padding-top: 38px !important;
+  }
+
+  .yadam .beat {
+    font-size: 64px !important;
+  }
+}
+
+/* ===== 흐르는 글귀: 화면폭과 무관한 진짜 무한루프 ===== */
+.yadam .ticker > div[data-mukdol-loop="ready"] {
+  display: flex !important;
+  width: max-content !important;
+  white-space: nowrap;
+  animation: mukdol-ticker-loop 30s linear infinite !important;
+  will-change: transform;
+}
+
+.yadam .ticker > div[data-mukdol-loop="ready"] .ticker-copy {
+  display: block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding-right: 2.5rem;
+}
+
+@keyframes mukdol-ticker-loop {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yadam .ticker > div[data-mukdol-loop="ready"] {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+</style>
+
+<script id="mukdol-ticker-loop-fix">
+(function () {
+  function setupMukdolTicker() {
+    var track = document.querySelector('.yadam .ticker > div');
+    if (!track || track.getAttribute('data-mukdol-loop') === 'ready') return;
+
+    /* 기존 문구를 그대로 가져와 동일한 두 트랙으로 만듦.
+       현재 원본에 문구가 이미 2회 반복되어 있어 넓은 화면에서도 충분히 길다. */
+    var text = (track.textContent || '').replace(/\s+/g, ' ').trim();
+    if (!text) return;
+
+    track.textContent = '';
+
+    for (var i = 0; i < 2; i++) {
+      var copy = document.createElement('span');
+      copy.className = 'ticker-copy';
+      copy.textContent = text + ' ';
+      track.appendChild(copy);
+    }
+
+    track.setAttribute('data-mukdol-loop', 'ready');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupMukdolTicker, { once: true });
+  } else {
+    setupMukdolTicker();
+  }
+})();
+</script>
+<!-- ===== Mukdol desktop compact patch END ===== -->
 </body>
 </html>
