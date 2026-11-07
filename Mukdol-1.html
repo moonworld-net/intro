@@ -224,14 +224,14 @@ html{scroll-behavior:smooth}button,summary,a{-webkit-tap-highlight-color:transpa
  root.addEventListener('dragstart',function(event){if(protectedPicture(event))event.preventDefault()},true);
 })();
 </script>
-  <!-- ===== Mukdol desktop compact patch START ===== -->
+<!-- ===== Mukdol desktop compact patch START ===== -->
 <style id="mukdol-desktop-compact-fix">
 /*
   목표
   - 모바일(600px 이하)은 기존 디자인 그대로 유지
   - 데스크탑은 화면을 억지로 채우지 않고 가운데 '책 한 권'처럼 배치
   - 650px 이상에서 강제로 생기던 묵돌 소개 2열 제거
-  - 벗들 3열 제거, PC에서는 2열로 정돈
+  - 벗들 3열 제거, PC에서도 한 줄 가로 스크롤 유지
   - 상단 메뉴가 좌우 끝까지 흩어지지 않게 중앙 밀집
   - 묵돌 한마디 / 말걸기 / 본문 폭 과확장 방지
 */
@@ -308,21 +308,32 @@ html{scroll-behavior:smooth}button,summary,a{-webkit-tap-highlight-color:transpa
     margin: 25px auto 0 !important;
   }
 
-  /* 친구 카드: PC에서 3열로 찌그러지지 않게 2열 */
+  /* 친구 카드: PC에서도 한 줄 가로 스크롤 유지 */
   .yadam .cast-grid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 28px 20px !important;
-    width: min(100%, 600px);
-    max-width: 600px;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 16px !important;
+    width: min(100%, 620px);
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
-    overflow: visible !important;
-    padding: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 4px 6px 14px !important;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .yadam .cast-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .yadam .cast-card {
-    min-width: 0;
+    flex: 0 0 280px !important;
+    width: 280px !important;
+    min-width: 280px !important;
+    scroll-snap-align: start;
   }
 
   /* 놀거리도 너무 벌어지지 않게 */
