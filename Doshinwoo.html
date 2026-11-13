@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#10151d" name="theme-color"/>
+<meta content="도신우, 부탁해요♥보스! 로사 코로네의 사내 기밀 안내 페이지" name="description"/>
+<title>도신우, 부탁해요♡보스! | 로사 • 코로네 V8</title>
+<style>
+:root {--bg:#10151d;--dark:#10151d;--panel:#19202b;--muted:#9fa9b9;--line:#343e4d;--red:#f34254;--redDeep:#bc263b;--yellow:#ffe26e;--cream:#f5eee2;--ink:#25252a;--white:#fffaf1;--radius:18px;--serif:Georgia,'Noto Serif KR',serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--white);font-family:system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;line-height:1.6;overflow-x:hidden;word-break:keep-all}body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(90deg,transparent 49.8%,#ffffff05 50%) 0 0/88px 88px,linear-gradient(transparent 49.8%,#ffffff04 50%) 0 0/88px 88px,radial-gradient(circle at 85% 15%,#681c2b33,transparent 30%);pointer-events:none}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}img{display:block;max-width:100%}::selection{background:var(--yellow);color:var(--ink)}.wrap{max-width:1140px;margin:auto;padding-inline:26px}.mono{font:700 11px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.15em}.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff45;border-radius:99px;padding:6px 12px;font-weight:800;font-size:11px;letter-spacing:.05em}.pill i{width:7px;height:7px;background:#ff495b;border-radius:50%;box-shadow:0 0 0 4px #ff495b22}.muted{color:var(--muted)}.number{font:900 clamp(48px,7vw,90px)/.9 ui-sans-serif,system-ui,sans-serif;letter-spacing:-.09em}
+.sitebar{height:76px;position:sticky;top:0;z-index:50;background:#10151def;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff1c}.sitebar .wrap{height:100%;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto;white-space:nowrap}.brand img{width:44px;height:44px;object-fit:contain}.brand b{display:block;font-size:15px;letter-spacing:.04em}.brand small{display:block;letter-spacing:.16em;font-size:9px;color:#c6a9aa;font-weight:700}.nav{display:flex;align-items:center;gap:6px}.nav a{font-size:12px;font-weight:850;color:#bfc8d2;padding:10px 12px;border-radius:8px;transition:.2s}.nav a:hover{color:white;background:#ffffff15}.modebtn{border:1px solid #ffffff54;border-radius:100px;background:#ffffff0e;color:var(--white);font-size:11px;font-weight:900;padding:10px 12px;white-space:nowrap;display:flex;align-items:center;gap:7px;transition:transform .2s}.modebtn:hover{transform:translateY(-2px)}.modebtn .switch{width:24px;height:13px;border-radius:99px;background:var(--red);position:relative}.modebtn .switch:after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:white;left:12px;top:2px;transition:.25s}
+.ribbon{height:32px;overflow:hidden;background:var(--yellow);color:var(--ink);display:flex;align-items:center;border-bottom:2px solid #d9bc51}.track{display:flex;align-items:center;gap:36px;white-space:nowrap;width:max-content;animation:run 30s linear infinite}.track span{font:950 11px ui-monospace,monospace;letter-spacing:.12em;word-spacing:.1em}.track span:before{content:'✦';color:#d3283b;margin-right:25px}@keyframes run{to{transform:translateX(-50%)}}
+.hero{position:relative;padding:44px 0 56px;min-height:654px;isolation:isolate}.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 48%,#b42a3a38,transparent 33%),linear-gradient(105deg,transparent 67%,#ffffff06 67%,#ffffff06 69%,transparent 69%);z-index:-1}.heroGrid{display:grid;grid-template-columns:1.04fr .96fr;gap:12px;align-items:center;min-height:550px;position:relative}.heroCopy{position:relative;z-index:2;padding-block:22px}.stamp{font:900 11px ui-monospace,monospace;letter-spacing:.08em;color:var(--yellow);display:inline-flex;gap:12px;align-items:center}.stamp::before{content:'↳';font:900 23px system-ui;color:var(--red)}.hero h1{font-size:clamp(56px,7.6vw,110px);line-height:1.01;letter-spacing:-.105em;margin:22px 0 16px;font-weight:1000;filter:drop-shadow(5px 7px 0 #080a0e)}.hero h1 .ruby{display:block;font-size:.5em;letter-spacing:-.08em;margin-bottom:12px}.hero h1 .hit{color:var(--red)}.hero h1 .heart{font-size:.55em;vertical-align:top;color:var(--yellow);display:inline-block;animation:pop 3s infinite}.hero h1 .smallheart{font-size:.48em;vertical-align:middle;color:#ff6a7b}.hero .desc{max-width:475px;color:#c9d0d7;font-size:15px;line-height:1.95;margin:22px 0 28px}.hero .desc strong{color:var(--white)}.action{border:2px solid #131519;background:var(--yellow);color:#292324;padding:16px 22px;font-weight:1000;font-size:14px;box-shadow:6px 6px 0 #d64352;display:inline-flex;gap:16px;align-items:center;transition:transform .15s,box-shadow .15s}.action:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 #d64352}.action .arrow{font-size:23px;line-height:1}.heroNote{display:flex;gap:17px;align-items:center;margin-top:32px;color:#bfc6ce;font:700 11px/1.6 ui-monospace,monospace;letter-spacing:.06em}.heroNote .seal{border:2px solid var(--red);border-radius:100%;width:55px;height:55px;display:grid;place-items:center;color:var(--red);font-weight:1000;transform:rotate(-15deg);flex:none;line-height:1.1;text-align:center}.heroArt{align-self:stretch;position:relative;min-height:550px;overflow:visible}.portraitFrame{position:absolute;inset:20px -14px 4px -30px;background:linear-gradient(135deg,#212a3b,#141d29 60%,#521c2b);clip-path:polygon(17% 0,100% 0,100% 87%,81% 100%,0 100%,0 19%);border:1px solid #ffffff13;overflow:hidden}.portraitFrame::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 6px,#ffffff08 7px),radial-gradient(circle at 75% 22%,#ff42513a,transparent 40%);z-index:2;pointer-events:none}.portraitFrame img{width:100%;height:100%;object-fit:cover;object-position:center 37%;transform:scale(1.02);filter:saturate(1.08) contrast(1.05);transition:transform .6s}.portraitFrame:hover img{transform:scale(1.065)}.portraitFrame:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 7px #10151d,inset 0 0 0 8px #ffffff12;pointer-events:none}.orbit{position:absolute;right:-25px;top:-22px;width:136px;height:136px;border:2px dashed #ffffff80;border-radius:50%;z-index:3;display:grid;place-items:center;transform:rotate(12deg);animation:spin 22s linear infinite}.orbit span{font-size:11px;font-weight:1000;letter-spacing:.1em;text-align:center;line-height:1.45;transform:rotate(-12deg)}.badgeFloat{position:absolute;z-index:4;background:var(--yellow);color:var(--ink);padding:12px 16px;font-weight:1000;font-size:13px;right:-25px;bottom:45px;box-shadow:7px 7px 0 #ee4c5d;transform:rotate(-4deg);animation:bob 4s ease-in-out infinite}.badgeFloat:before{content:'★';color:#cb3543;margin-right:5px}.portraitTag{position:absolute;left:-15px;bottom:18px;z-index:3;background:#161920d9;border:1px solid #ffffff67;padding:13px 16px;min-width:206px}.portraitTag strong{font-size:16px;display:block}.portraitTag small{color:#c3a1a6;display:block;font:700 10px ui-monospace,monospace;letter-spacing:.15em;margin-top:4px}
+@keyframes pop{0%,88%,100%{transform:scale(1)}92%{transform:scale(1.22)}}@keyframes spin{to{transform:rotate(372deg)}}@keyframes bob{50%{transform:translateY(-10px) rotate(-4deg)}}
+.strip{background:#ea4958;color:#fff;border-top:3px solid #ffd66c;border-bottom:3px solid #ffd66c;overflow:hidden}.strip .wrap{display:flex;gap:15px;align-items:center;justify-content:space-between;min-height:65px}.strip b{font-size:clamp(14px,2.3vw,22px);letter-spacing:-.05em}.strip .symbol{font-size:26px}.section{padding:96px 0;position:relative}.sectionHead{display:flex;gap:25px;align-items:flex-end;justify-content:space-between;margin-bottom:34px}.sectionHead .index{color:var(--red);font:900 13px ui-monospace,monospace;letter-spacing:.1em;margin-bottom:13px}.sectionHead h2{font-size:clamp(33px,4.7vw,55px);line-height:1.12;margin:0;letter-spacing:-.07em;font-weight:1000}.sectionHead h2 em{font-style:normal;color:var(--yellow)}.sectionHead p{font-size:13px;color:var(--muted);max-width:240px;margin:0 0 5px;line-height:1.85}
+.recordGrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px}.recordLeft{border:1px solid #ffffff2e;border-radius:var(--radius);background:linear-gradient(155deg,#303946,#181f2a);padding:26px;position:relative;overflow:hidden;min-height:470px}.recordLeft:before{content:'PERSONNEL';position:absolute;bottom:-25px;left:-2px;font-size:83px;line-height:1;font-weight:1000;color:#ffffff09;letter-spacing:-.1em}.recordLeft .top{display:flex;align-items:center;justify-content:space-between;gap:8px}.recordLeft .cardLogo{width:82px;height:82px;object-fit:contain}.recordLeft h3{font-size:clamp(38px,5vw,60px);letter-spacing:-.09em;line-height:1;margin:25px 0 8px}.recordLeft .under{color:var(--yellow);font-size:13px;font-weight:800;letter-spacing:.03em}.statlist{margin:28px 0 0;display:grid;grid-template-columns:100px 1fr;gap:12px 8px;font-size:13px}.statlist dt{color:#91a0b4;font-weight:800}.statlist dd{margin:0;font-weight:750}.recordRight{display:grid;gap:16px}.quoteBlock{background:var(--cream);color:#24262a;border-radius:var(--radius);padding:30px;min-height:205px;display:flex;flex-direction:column;justify-content:space-between;position:relative}.quoteBlock:after{content:'❞';position:absolute;right:25px;top:0;font-size:80px;color:#e2c8bf}.quoteBlock .tag{color:#b9233c}.quoteBlock strong{font-size:clamp(22px,3.3vw,35px);letter-spacing:-.055em;line-height:1.4;position:relative;z-index:1}.tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs button{border:1px solid #ffffff4b;border-radius:12px;background:#ffffff0b;color:#aeb7c4;padding:11px 15px;font-weight:950;font-size:13px}.tabs button[aria-selected="true"]{background:var(--yellow);color:#24252a;border-color:var(--yellow)}.modeDesc{border:1px solid #ffffff24;border-radius:15px;padding:20px 23px;min-height:127px;background:#ffffff09}.modeDesc p{font-size:14px;color:#c9d0d9;margin:7px 0 0;line-height:1.85}.modeDesc .mono{color:var(--red)}.actionPanel{display:flex;gap:12px;flex-wrap:wrap}.smallbtn{border:1px solid #ffffff36;background:#263240;color:white;font-size:12px;padding:12px 16px;border-radius:8px;font-weight:900}.smallbtn:hover{background:#35475c}.special{border:0;background:var(--red);color:white}.special:hover{background:#ff5e6c}
+.dividerZig{height:16px;background:linear-gradient(135deg,transparent 75%,#343b46 75%) 0 0/18px 18px,linear-gradient(225deg,transparent 75%,#343b46 75%) 0 0/18px 18px;opacity:.7}
+.world{background:#eae3d6;color:#2b2826;padding:93px 0 103px;position:relative;overflow:hidden}.world:before{content:'COMPANY / SECRET';position:absolute;font-size:clamp(70px,11vw,155px);font-weight:1000;letter-spacing:-.12em;color:#d8cfc1;top:0;left:-10px;white-space:nowrap}.world .sectionHead{position:relative}.world .sectionHead h2 em{color:#d33b51}.world .sectionHead p{color:#6e6560}.world .sectionHead .index{color:#b42339}.companyGrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;position:relative}.company{min-height:404px;position:relative;border:3px solid #25242a;background:#191c26;color:#fff;padding:29px;box-shadow:8px 8px 0 #c6bdb1;border-radius:5px;overflow:hidden;transition:transform .2s}.company:hover{transform:translateY(-5px)}.company.public{background:#eee8de;color:#28292c}.company .label{font:900 11px ui-monospace,monospace;letter-spacing:.12em;display:inline-block;padding:7px 11px;background:#f2e4c7;color:#29252a}.company .logobox{height:190px;display:grid;place-items:center;padding:7px}.company .logobox img{height:172px;width:230px;object-fit:contain;filter:drop-shadow(0 9px 12px #0002)}.company h3{margin:5px 0 6px;font-size:33px;letter-spacing:-.07em}.company p{color:#bbc1cd;margin:0;max-width:370px;font-size:14px}.company.public p{color:#645f59}.company .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:24px;border-top:1px solid #ffffff26;padding-top:15px;font:900 11px ui-monospace,monospace;letter-spacing:.06em}.company.public .foot{border-color:#00000028}.twoFace{margin-top:33px;background:#24252a;color:white;padding:22px 28px;border-radius:10px;display:flex;justify-content:space-between;gap:15px;align-items:center}.twoFace b{font-size:18px;letter-spacing:-.03em}.twoFace span{font-size:13px;color:#c7c3bd}.companyCaption{margin-top:18px;font-size:12px;color:#6a625b}.notice{background:#fadc62;color:#21252b;padding:24px 20px;transform:rotate(-2deg);font-size:14px;font-weight:900;box-shadow:5px 5px 0 #c54151;max-width:260px;text-align:center}
+.scene{padding:98px 0 85px;background:linear-gradient(#10151d,#18202b);overflow:hidden}.sceneWrap{display:grid;grid-template-columns:1.02fr .98fr;gap:38px;align-items:center}.sceneVisual{border:4px solid #ffffff2e;box-shadow:13px 13px 0 #f34254;transform:rotate(-2deg);overflow:hidden;position:relative}.sceneVisual img{width:100%;height:360px;object-fit:cover;object-position:center 50%;transition:transform .6s}.sceneVisual:hover img{transform:scale(1.05)}.sceneVisual:before{content:'ROCO STAFF ONLY';position:absolute;background:var(--yellow);color:#24242a;padding:6px 12px;left:-2px;top:20px;font:900 12px ui-monospace,monospace;z-index:1;transform:rotate(-2deg)}.scene .sceneText h2{font-size:clamp(36px,5vw,58px);line-height:1.13;letter-spacing:-.08em;margin:15px 0}.scene .sceneText p{color:#bac4d0;line-height:1.85;font-size:14px}.bullet{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:800;padding:7px 0;color:#e7d8d3}.eggBtn{margin-top:18px;display:inline-flex;align-items:center;gap:9px;background:#ffdc65;color:#24272c;border:0;border-radius:8px;font-size:12px;font-weight:1000;padding:12px 15px;box-shadow:4px 4px 0 #e34356;transform:rotate(-1deg);transition:.2s}.eggBtn:hover{transform:translate(2px,2px) rotate(-1deg);box-shadow:2px 2px 0 #e34356}.bullet i{display:grid;place-items:center;width:26px;height:26px;background:#e34d61;border-radius:6px;font-style:normal;color:white}
+.heroes{padding:98px 0 110px;background:#f5efe6;color:#242a30}.heroes .sectionHead h2 em{color:#e13b52}.heroes .sectionHead p{color:#615d59}.heroes .sectionHead .index{color:#de3c50}.heroWide{position:relative;border:5px solid #17212c;border-radius:12px;overflow:hidden;background:#1a2d46;box-shadow:9px 9px 0 #e3cbba}.heroWide img{width:100%;height:300px;object-fit:cover;object-position:center 18%}.heroWide:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#111b29d9);pointer-events:none}.heroWide .wideText{position:absolute;z-index:1;bottom:18px;left:20px;color:white;font-weight:1000;letter-spacing:.13em;font-size:11px;text-shadow:0 2px 8px black}.heroRoster{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:24px 4px 17px;scrollbar-color:#d14658 #f2e6de}.heroPerson{border:2px solid #27303a;background:#fffefa;color:#24262c;border-radius:13px;min-width:200px;flex:1;max-width:290px;overflow:hidden;text-align:left;padding:0;transition:transform .2s,box-shadow .2s;scroll-snap-align:start}.heroPerson:hover,.heroPerson:focus-visible{transform:translateY(-5px);box-shadow:4px 7px 0 #d14658}.heroPerson .photobox{height:215px;overflow:hidden;position:relative;background:#ccd2d8}.heroPerson .photobox img{height:100%;width:100%;object-fit:cover;object-position:center 22%;transition:transform .25s}.heroPerson:hover .photobox img{transform:scale(1.06)}.heroPerson .colorbar{height:7px;background:var(--hero)}.heroPerson .details{padding:15px 16px 18px}.heroPerson .details .eng{font:900 10px ui-monospace,monospace;color:var(--hero);letter-spacing:.16em}.heroPerson h3{font-size:23px;margin:2px 0 4px;letter-spacing:-.06em}.heroPerson p{font-size:12px;color:#666b72;line-height:1.6;margin:0}.heroPerson .right{font-size:11px;font-weight:900;display:block;text-align:right;margin-top:12px;color:#24282e}.heroesNote{margin-top:22px;background:#15212c;color:#f6efe8;border-left:9px solid #f34254;padding:21px 26px;display:flex;gap:22px;align-items:center;justify-content:space-between}.heroesNote b{font-size:15px}.heroesNote p{font-size:12px;margin:4px 0 0;color:#c4c8ce}
+.manual{padding:96px 0;background:#10151d}.manual .sectionHead h2 em{color:var(--red)}.ticketGrid{display:grid;grid-template-columns:1.06fr .94fr;gap:20px}.ticket{border:2px solid #f5ede2;background:#ede6d9;color:#252932;border-radius:12px;min-height:300px;box-shadow:8px 8px 0 #f34254;padding:27px 30px;position:relative}.ticket:before,.ticket:after{content:"";position:absolute;width:26px;height:26px;background:#10151d;border-radius:50%;right:72px}.ticket:before{top:-14px}.ticket:after{bottom:-14px}.ticket h3{font-size:26px;letter-spacing:-.06em;margin:10px 0 15px}.ticket .cut{border-top:2px dashed #ada499;margin:20px 0}.ticket .qrow{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed #bbb3a6;padding:11px 0;font-size:13px;align-items:center}.ticket .qrow span{font-weight:800}.ticket .qrow b{font:900 11px ui-monospace,monospace;color:#b92339;white-space:nowrap}.ticket.dark{background:#262e3b;color:white;box-shadow:8px 8px 0 #ffe26e}.ticket.dark .qrow{border-color:#ffffff37}.ticket.dark .qrow b{color:#ffe26e}.ticket.dark .cut{border-color:#ffffff60}.ticket.dark .mono{color:#ffe26e}.tiny{font-size:11px;color:#d0b6b9}
+.footer{padding:38px 0 50px;border-top:1px solid #ffffff24}.footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px}.footBrand{display:flex;align-items:center;gap:12px}.footBrand img{width:52px;height:52px;object-fit:contain}.footBrand strong{display:block;font-size:20px}.footBrand small{display:block;color:#b6bdc8;font-size:11px;letter-spacing:.05em}.footer em{color:var(--red);font-style:normal;font-weight:1000}
+.dialogBackdrop{position:fixed;inset:0;z-index:99;background:#090c14e8;backdrop-filter:blur(6px);display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:.25s}.dialogBackdrop.open{opacity:1;visibility:visible}.dialog{border:3px solid #ffe26e;max-width:570px;width:100%;background:#1a202c;box-shadow:10px 10px 0 #d43a50;color:#fff;position:relative;padding:32px;transform:scale(.9) translateY(15px);transition:transform .28s var(--ease);overflow:hidden}.dialogBackdrop.open .dialog{transform:scale(1) translateY(0)}.dialog .close{position:absolute;right:11px;top:11px;background:#f9e7cd;color:#292a2c;border:0;border-radius:50%;width:36px;height:36px;font-size:18px;font-weight:900;display:grid;place-items:center;z-index:2}.dialog .mark{display:block;font-size:12px;color:var(--yellow);font-weight:900;letter-spacing:.15em}.dialog h3{font-size:clamp(28px,5vw,44px);line-height:1.17;letter-spacing:-.07em;margin:18px 0 14px}.dialog p{font-size:14px;color:#cfd4df;line-height:1.85}.dialog .bigStamp{display:inline-flex;border:5px solid #ff4c5d;color:#ff4c5d;border-radius:6px;font-weight:1000;font-size:27px;letter-spacing:.1em;padding:8px 23px;transform:rotate(-7deg);margin:18px 0 7px}.dialog .redbar{height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 16px,#ffd760 16px 32px);margin:0 -32px -32px}.dialog .heroModalTop{display:flex;gap:22px;align-items:flex-start}.dialog .heroModalTop img{width:145px;height:195px;object-fit:cover;object-position:center top;border:3px solid white;border-radius:8px}.dialog .heroModalTop .heroInfo{flex:1}.dialog .heroModalTop .heroInfo h3{margin-top:5px}.dialog .heroModalTop .heroInfo p{margin:6px 0 0}.dialog .quote{border-left:4px solid var(--yellow);padding-left:14px;margin-top:23px;font-size:17px;font-weight:900;line-height:1.7}
+.toast{position:fixed;z-index:101;bottom:25px;left:50%;transform:translate(-50%,20px);background:#ffdf67;color:#29252a;border:2px solid #25242a;padding:11px 19px;border-radius:6px;font-weight:900;font-size:13px;box-shadow:5px 5px 0 #e94d61;opacity:0;pointer-events:none;transition:.2s;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}.sparks{position:fixed;inset:0;z-index:100;pointer-events:none;overflow:hidden}.spark{position:absolute;width:10px;height:18px;background:var(--yellow);top:40%;left:50%;animation:explode 680ms ease-out forwards}@keyframes explode{to{transform:translate(var(--tx),var(--ty)) rotate(600deg);opacity:0}}.inView{opacity:0;transform:translateY(25px);transition:opacity .6s var(--ease),transform .6s var(--ease)}.inView.show{opacity:1;transform:translateY(0)}body.office{--bg:#273040;--red:#a72439;--yellow:#ffda5b}body.office .sitebar{background:#26303deb}body.office .hero::before{background:radial-gradient(circle at 70% 50%,#efcb7840,transparent 34%)}body.office .hero .stamp{color:#ffe26e}body.office .modebtn .switch{background:#6fc9a1}body.office .modebtn .switch:after{left:3px}
+@media(max-width:900px){.hero h1{font-size:clamp(52px,8vw,80px)}.nav{gap:0}.nav a{padding:8px 7px}.heroArt{min-height:480px}.heroGrid{min-height:485px}.section{padding-block:72px}.recordGrid{grid-template-columns:1fr 1.12fr}.heroRoster .heroPerson{min-width:185px}.company .logobox{height:175px}.badgeFloat{right:0}}
+@media(max-width:700px){html{scroll-padding-top:76px}.sitebar{height:64px}.sitebar .wrap{padding-inline:16px;gap:5px}.brand img{width:36px;height:36px}.brand b{font-size:12px}.brand small{font-size:8px}.nav{display:none}.modebtn{font-size:10px;padding:8px}.wrap{padding-inline:18px}.hero{padding:19px 0 38px;min-height:0}.heroGrid{display:flex;flex-direction:column-reverse;gap:0;min-height:0}.heroArt{width:100%;min-height:355px;align-self:auto}.portraitFrame{inset:0 8px 12px 8px;clip-path:polygon(14% 0,100% 0,100% 82%,84% 100%,0 100%,0 16%)}.portraitFrame img{object-position:center 23%}.orbit{right:0;top:-8px;width:83px;height:83px}.orbit span{font-size:8px}.badgeFloat{right:14px;bottom:27px;font-size:11px;padding:8px 11px}.portraitTag{left:4px;bottom:22px;padding:9px 11px;min-width:0}.portraitTag strong{font-size:12px}.portraitTag small{font-size:8px}.heroCopy{width:100%;padding:12px 3px 22px}.hero h1{font-size:clamp(50px,11.9vw,80px);line-height:1.03;margin:12px 0}.hero h1 .ruby{font-size:.54em;margin-bottom:8px}.hero .desc{font-size:13px;margin:15px 0 21px}.heroNote{margin-top:24px;font-size:9px}.heroNote .seal{width:43px;height:43px}.strip .wrap{min-height:55px}.strip b{font-size:13px}.strip .symbol{font-size:15px}.section{padding:67px 0}.sectionHead{align-items:flex-start;flex-direction:column;gap:12px;margin-bottom:25px}.sectionHead p{max-width:none}.recordGrid,.companyGrid,.ticketGrid,.sceneWrap{grid-template-columns:1fr}.recordLeft{min-height:375px;padding:24px}.recordLeft h3{font-size:51px}.quoteBlock{min-height:160px;padding:23px}.quoteBlock strong{font-size:24px}.modeDesc{min-height:0}.world{padding-block:66px}.world:before{font-size:67px}.company{min-height:350px;padding:20px}.company .logobox{height:165px}.company .logobox img{height:155px}.twoFace{flex-direction:column;align-items:flex-start;padding:19px}.notice{align-self:flex-end}.scene{padding:65px 0}.sceneWrap{gap:36px}.sceneVisual{margin:0 10px 0 0}.sceneVisual img{height:280px}.scene .sceneText h2{font-size:43px}.heroes{padding:70px 0}.heroWide img{height:210px}.heroRoster{margin-inline:-18px;padding:22px 18px}.heroPerson{min-width:165px;max-width:195px}.heroPerson .photobox{height:187px}.heroesNote{flex-direction:column;align-items:flex-start}.manual{padding:66px 0}.ticket{padding:23px;min-height:0}.ticket:before,.ticket:after{right:52px}.footer .wrap{flex-direction:column;align-items:flex-start}.dialog{padding:23px}.dialog .heroModalTop img{width:110px;height:155px}.dialog .redbar{margin:0 -23px -23px}.dialog .bigStamp{font-size:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}.inView{opacity:1;transform:none}}
+
+/* V15 · additional commands, split pink quote, production note and copyright */
+.quote .pinkTagline{display:block;color:#ff91c2;line-height:1.65}
+.quote .pinkOffDuty{display:block;color:#d7dbe3;font-size:.9em;line-height:1.65;margin-top:8px;font-weight:750}
+.rocoBuildNote{padding:29px 0 26px;background:#161d28;border-top:1px solid #ffffff22;text-align:center;color:#aeb9c6;font-size:12px;line-height:1.85;letter-spacing:-.02em}
+.rocoBuildNote .wrap{max-width:820px}
+.rocoBuildNote p{margin:0 0 3px}
+.rocoBuildNote .rocoAudioNote{margin-top:10px;color:#f2d98c}
+.rocoBuildNote .rocoAudioNote span{margin-right:6px}
+.footerCopyright{margin:30px auto 0;padding:21px 12px 0;max-width:calc(100% - 36px);border-top:1px solid #ffffff24;text-align:center;font-size:11px;letter-spacing:.2em;font-weight:700;color:#9ea5b0}
+@media(max-width:700px){.rocoBuildNote{padding:25px 0 22px;font-size:11px;line-height:1.95}.rocoBuildNote .rocoAudioNote{margin-top:10px}.footerCopyright{margin-top:24px}}
+
+/* SKILLS CLEAN: one explanatory list, no duplicated chips or copy controls */
+.ticket.dark .skillIntro{font-size:13px;line-height:1.65;color:#d6d7de;margin:0 0 2px}
+.ticket.dark .commandExplainers{margin-top:10px;gap:9px}
+.ticket.dark .commandExplainers>div{padding-top:10px}
+.ticket.dark .commandExplainers>div:first-child{border-top:1px dashed #6d6b7d}
+</style>
+<style>
+/* Reboot V2 / complete world information; responsive original design preserved */
+.bossFixed{margin:18px 0 0;padding:22px 24px;display:flex;align-items:flex-start;gap:20px;background:#fff8ec;border:2px solid #24242b;border-radius:12px;box-shadow:6px 6px 0 #f0c4ad}
+.bossFixedIcon{font-size:27px;display:grid;place-items:center;min-width:52px;height:52px;border:2px solid #222;border-radius:50%;background:#ffe277;color:#222}.bossTiny{color:#a44350;font-size:11px;letter-spacing:.12em}.bossFixed h3{font-size:clamp(18px,2.6vw,25px);margin:8px 0 10px}.bossFixed p{margin:8px 0;line-height:1.75;font-size:14px}
+.worldExtra{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 12px}.worldMemo{border:2px dashed #d4a2a4;background:#fff4ed;border-radius:13px;padding:20px 22px;color:#2b2426}.worldMemo.whiteMemo{border-color:#d3d2db;background:#f5f5fa}.memoTop{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#94545b}.worldMemo h3{font-size:20px;margin:15px 0 9px}.worldMemo p{font-size:14px;line-height:1.75;margin:9px 0}
+.heroWide{position:relative}.heroWide .lumenLogo{position:absolute;right:18px;top:15px;width:clamp(66px,10vw,112px);height:clamp(66px,10vw,112px);object-fit:contain;filter:drop-shadow(0 2px 8px #040c25);background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.associationSection{padding:84px 0 98px;background:#e8edf6;color:#252932;position:relative;overflow:hidden}.associationSection:before{content:"★";position:absolute;right:-45px;top:30px;font-size:340px;color:#dbe3f2;opacity:.7;pointer-events:none}.associationSection .wrap{position:relative}.assocPaper{margin-top:30px;background:#fff;border:2px solid #1d2b4c;border-radius:12px;box-shadow:8px 8px 0 #bcc9e0;overflow:hidden}.assocRibbon{display:flex;align-items:center;gap:13px;background:#1e3158;color:white;padding:18px 25px}.assocRibbon img{width:68px;height:68px;object-fit:contain}.assocRibbon b{display:block;font-size:23px}.assocRibbon span.mono{display:block;font-size:10px;color:#bec9df;letter-spacing:.06em}.assocSeal{margin-left:auto;border:2px solid #f2d889;color:#f2d889;font:900 12px monospace;letter-spacing:.04em;transform:rotate(-8deg);padding:10px}.assocColumns{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:30px}.assocColumns>div:first-child{border-right:1px dashed #c2c7d0;padding-right:25px}.assocColumns h3{font-size:20px;margin:0 0 14px}.assocColumns p{font-size:14px;line-height:1.85;margin:10px 0}.assocFooter{margin-top:17px;background:#fff0cb;border:1px solid #f5d384;border-radius:6px;padding:12px;font-size:13px;font-weight:750}
+.playGuide{margin:22px 0 34px}.playIntro{border:2px solid #28242a;border-radius:11px;background:#ffefb4;box-shadow:5px 5px 0 #24242a;padding:20px 22px}.playIntro .mono{color:#ba3646;font-size:11px}.playIntro h3{font-size:clamp(21px,3vw,31px);margin:8px 0}.playIntro p{font-size:14px;margin:0;line-height:1.6}.playCols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:22px}.playPanel{background:#fff;border:2px solid #25252b;border-radius:10px;overflow:hidden;box-shadow:4px 4px 0 #ddd2cb;min-width:0}.playPanel header{background:#f9f0eb;border-bottom:2px solid #25252b;padding:14px 15px}.playPanel header span{display:inline-block;background:#ef4453;color:white;border-radius:5px;font:900 12px monospace;padding:5px 7px}.playPanel h4{font-size:17px;margin:10px 0 5px}.playPanel header small{font-size:10px;color:#9b4855;font-weight:900;letter-spacing:.08em}.playRows{padding:5px 14px 10px}.playRows>div{padding:12px 0;border-bottom:1px dashed #d9d2cb;display:flex;flex-direction:column;gap:5px;font-size:13px;line-height:1.5}.playRows>div:last-child{border-bottom:0}.playRows b{color:#bc3646;font-size:11px}.playFoot{font-size:13px;color:#706a67;margin:16px 0 0;text-align:center}.relCopy{font-size:13px;line-height:1.7;padding-top:10px}.commandExplainers{display:grid;grid-template-columns:1fr;gap:12px;margin-top:19px}.commandExplainers>div{border-top:1px dashed #6d6b7d;padding-top:11px}.commandExplainers b{color:#f3d46e;font-weight:900;font-size:13px}.commandExplainers p{color:#e1dfea;font-size:12px;line-height:1.65;margin:5px 0 0}.heroProfileDetails{margin-top:18px;display:grid;gap:15px}.heroProfileDetails section{border-top:1px dashed #a9acb2;padding:14px 0 0}.heroProfileDetails h4{color:#f1d66c;font:800 11px monospace;letter-spacing:.06em;margin:0 0 8px}.heroProfileDetails p{font-size:14px;line-height:1.8;margin:0;color:#f5f0ed}
+.vidPlayer{display:block;width:100%;max-height:56vh;object-fit:contain;background:#0c0f16;border:2px solid #ffe26e;border-radius:7px;margin:18px 0}.vidHint{font-size:12px;line-height:1.7}.vidHint a{color:#ffe387;text-decoration:underline}
+@media(max-width:800px){.playCols{grid-template-columns:1fr}.worldExtra{grid-template-columns:1fr}.assocColumns{grid-template-columns:1fr;gap:20px}.assocColumns>div:first-child{border-right:0;padding-right:0;border-bottom:1px dashed #c2c7d0;padding-bottom:20px}.associationSection{padding:66px 0 78px}.bossFixed{padding:18px}.bossFixedIcon{min-width:39px;height:39px;font-size:20px}.assocSeal{display:none}}
+@media(max-width:500px){.assocRibbon{padding:14px}.assocRibbon img{width:52px;height:52px}.assocRibbon b{font-size:19px}.assocColumns{padding:19px}.worldMemo{padding:16px}.heroWide .lumenLogo{right:8px;top:8px;width:64px;height:64px}.bossFixed{gap:12px}}
+</style><style id="v3-polish">
+/* V3 · mobile-first refinement / in-page interlude / reliable hero detail scrolling */
+/* On light paper the prior site's inherited white text was unreadable. */
+#boss-settings{color:#2b282e!important}
+#boss-settings h3,#boss-settings p,#boss-settings b,#boss-settings strong{color:#2b282e!important}
+#boss-settings .bossTiny{color:#9f3348!important}
+#boss-settings .bossFixedIcon{color:#222!important}
+
+/* A bounded independently scrollable modal works with touch and mouse. */
+.dialogBackdrop{overflow-y:auto;overscroll-behavior:contain;padding:12px;align-items:center;justify-items:center}
+.dialog{max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;touch-action:pan-y;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#e34d61 #283141}
+#dialogContent{min-width:0;overflow-wrap:anywhere}
+.dialog .heroModalTop .heroInfo{min-width:0}
+.dialog .close{position:sticky;float:right;right:0;top:0;margin:-19px -19px 0 8px;z-index:5}
+.dialog .redbar{clear:both}
+
+/* Tiny phone-only wayfinding bar, desktop keeps the original full navigation. */
+.mobileQuicknav{display:none}
+
+/* Theater paper-ticket look, a cheeky break between work and heroes. */
+.interlude{position:relative;padding:72px 0 88px;overflow:hidden;color:#252a36;background:radial-gradient(ellipse at 10% 25%,#f8cfca 0,transparent 31%),radial-gradient(ellipse at 93% 76%,#ffe5a3 0,transparent 32%),#fff1dc}
+.interlude:before{content:'★   ♡   ★   ♡   ★   ♡   ★';position:absolute;left:-20px;top:25px;font-size:30px;letter-spacing:45px;white-space:nowrap;color:#df455c15;pointer-events:none}
+.interludeTicker{margin:0 auto 17px;overflow:hidden;max-width:100%;height:22px;font:900 10px/22px ui-monospace,monospace;color:#b23b55;letter-spacing:.23em;text-align:center}
+.interludeTicker span{display:inline-block;white-space:nowrap;animation:ticketMarquee 17s linear infinite}
+@keyframes ticketMarquee{0%{transform:translateX(28%)}100%{transform:translateX(-28%)}}
+.interludeStage{position:relative;max-width:1050px;margin:auto;background:#fffaf2;border:3px solid #242a34;box-shadow:11px 11px 0 #e64c63;border-radius:18px;overflow:hidden}
+.interludeStage:before,.interludeStage:after{content:'';position:absolute;top:60px;width:22px;height:22px;border-radius:50%;background:#fff1dc;border:3px solid #252a36;z-index:2}
+.interludeStage:before{left:-13px}.interludeStage:after{right:-13px}
+.interludeTop{background:#273448;color:#fff5e5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 22px;font:900 10px/1.5 ui-monospace,monospace;letter-spacing:.12em}
+.nowShowing{display:flex;gap:8px;align-items:center;color:#ffe47a}.nowShowing i,.theaterLed{width:7px;height:7px;border-radius:50%;background:#f94c64;box-shadow:0 0 0 4px #f94c6428;animation:theaterPulse 1.8s ease-in-out infinite}
+@keyframes theaterPulse{50%{opacity:.35}}
+.interludeGrid{display:grid;grid-template-columns:.87fr 1.13fr;align-items:center;gap:28px;padding:37px}
+.interludeCopy{min-width:0;position:relative}
+.interludeSticker{display:inline-block;transform:rotate(-8deg);font-size:13px;font-weight:1000;border:2px solid #263244;background:#ffe56e;padding:8px 12px;box-shadow:3px 3px 0 #ea5066;margin:0 0 16px}
+.interludeOver{display:block;color:#a93f50;font-weight:900;font-size:13px}
+.interludeCopy h2{margin:11px 0 14px;line-height:1.02;letter-spacing:-.08em}
+.interludeCopy h2 span{display:block;font-size:clamp(27px,3.4vw,38px);color:#343c52;font-weight:1000}
+.interludeCopy h2 strong{display:block;font-size:clamp(38px,4.6vw,64px);color:#ee445c;text-shadow:3px 4px 0 #ffe2a3;white-space:nowrap}
+.interludeCopy>p{font-size:13px;line-height:1.85;color:#4c5058;margin:0 0 12px}
+.interludeSpeech{position:relative;display:inline-block;margin:6px 0 13px;padding:12px 14px;background:#ffdf72;border:2px solid #28303e;border-radius:11px;font-size:14px;font-weight:1000;line-height:1.5;box-shadow:4px 4px 0 #e34e62;transform:rotate(-1deg)}
+.interludeSpeech span{font-size:15px}
+.interludeCopy .interludeMeta{font-size:12px;font-weight:800;color:#555665}
+.interludeSecret{display:inline-block;font-size:11px;font-weight:800;color:#ae5261;border-bottom:1px dashed #e5a5a7}
+.interludePlayerSide{min-width:0;padding:10px;border:3px solid #29374d;border-radius:13px;background:#29374d;box-shadow:7px 7px 0 #ffcb6c;transform:rotate(1deg)}
+.theaterMarquee{display:flex;justify-content:space-between;align-items:center;color:#ffdf72;gap:10px;font:900 13px/1.4 ui-monospace,monospace;letter-spacing:.12em;padding:5px 10px 12px}
+.theaterMarquee span{font-size:11px;letter-spacing:.1em}
+.theaterScreen{overflow:hidden;border:3px solid #fff3db;border-radius:5px;background:#130d12;aspect-ratio:4/3;display:grid;place-items:center}
+.theaterScreen video{display:block;width:100%;height:100%;object-fit:contain;background:#130d12}
+.theaterControls{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 6px 3px;color:#e5e4ee;font-size:11px;font-weight:800}
+.theaterControls span{display:inline-flex;gap:9px;align-items:center}.theaterControls a{color:#ffe48c;text-decoration:underline;text-underline-offset:2px}
+.theaterGuide{color:#eae2dc;font-size:10px;line-height:1.5;padding:0 7px}
+.interludeBottom{text-align:center;color:#ae4254;font:900 11px ui-monospace,monospace;letter-spacing:.13em;border-top:2px dashed #edc4bf;padding:11px}
+.interludeBottom span{color:#d63c54;padding-inline:12px}
+@media(max-width:800px){
+.interlude{padding:49px 0 61px}
+.interludeGrid{grid-template-columns:1fr;gap:25px;padding:25px}
+.interludeCopy h2 strong{font-size:clamp(42px,9vw,59px)}
+.interludePlayerSide{max-width:640px;width:100%;justify-self:center}
+}
+@media(max-width:700px){
+.mobileQuicknav{display:flex;position:sticky;top:64px;z-index:48;width:100%;padding:7px 12px;gap:7px;background:#fff0dc;color:#26303c;border-bottom:2px solid #242b39;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}
+.mobileQuicknav::-webkit-scrollbar{display:none}
+.mobileQuicknav a{display:inline-flex;flex:1;min-width:57px;align-items:center;justify-content:center;gap:4px;white-space:nowrap;border-radius:7px;padding:6px 4px;background:#fffdf7;border:1px solid #dbc7bd;font-weight:1000;font-size:11px}
+.mobileQuicknav a:active{transform:translateY(2px)}
+html{scroll-padding-top:118px}
+.heroArt{min-height:300px}
+.heroCopy{padding-block:10px 19px}
+.hero h1{font-size:clamp(48px,12vw,72px)}
+.hero .desc{max-width:100%;line-height:1.8}
+.interludeStage{border-width:2px;box-shadow:6px 6px 0 #e64c63;border-radius:12px}
+.interludeTop{padding:10px 13px;letter-spacing:0;font-size:9px}
+.interludeGrid{padding:18px 17px 25px;gap:25px}
+.interludeSticker{margin-bottom:12px}
+.interludeCopy h2 span{font-size:30px}.interludeCopy h2 strong{font-size:clamp(38px,10vw,50px)}
+.interludePlayerSide{padding:6px;box-shadow:4px 5px 0 #ffd36e;transform:none}
+.theaterMarquee{font-size:11px;padding:5px 8px 10px}
+.theaterControls{font-size:10px}
+.dialogBackdrop{padding:10px}
+.dialog{max-height:calc(100dvh - 20px);padding:22px;box-shadow:4px 5px 0 #d43a50}
+.dialog .heroModalTop{gap:12px}
+.dialog .heroModalTop img{width:98px;height:139px;flex:0 0 98px}
+.dialog .heroModalTop .heroInfo h3{font-size:26px}
+.dialog .heroModalTop .heroInfo p{font-size:12px}
+#boss-settings{padding:16px;gap:10px}
+#boss-settings .bossFixedIcon{min-width:32px;width:32px;height:32px;font-size:17px}
+#boss-settings h3{font-size:19px;line-height:1.3}
+#boss-settings p{font-size:13px;line-height:1.7}
+}
+@media(max-width:375px){
+.mobileQuicknav a{font-size:10px;min-width:50px;gap:2px}
+.mobileQuicknav{gap:4px;padding-inline:7px}
+.interludeTop{font-size:8px}.interludeCopy h2 strong{font-size:37px}
+}
+@media(prefers-reduced-motion:reduce){.interludeTicker span,.nowShowing i,.theaterLed{animation:none}}
+</style>
+
+<style>
+/* V4 FULL LEGIBILITY PASS: preserve the graphics, never inherit dark-page white text on pale paper. */
+/* Game guide: yellow paper introduction and white recommendation panels */
+.playGuide .playIntro,
+.playGuide .playPanel{color:#242a34}
+.playGuide .playIntro h3,
+.playGuide .playIntro p,
+.playGuide .playPanel h4,
+.playGuide .playRows > div > span{color:#242a34}
+.playGuide .playPanel header small{color:#873344}
+.playGuide .playRows b{color:#a6263d}
+.playGuide .playPanel header > span{background:#b6253d;color:#fff}
+.playGuide .playFoot{color:#d6dce5}
+/* Hero association: originally dark-section yellow headline and gray paragraph were inherited. */
+.associationSection .sectionHead h2,
+.associationSection .sectionHead h2 em{color:#26344c}
+.associationSection .sectionHead h2 em{color:#a72642}
+.associationSection .sectionHead p{color:#354255}
+.associationSection .sectionHead .index{color:#a52740}
+/* Light cards: small colored ranger roles must remain legible, not pastel on cream. */
+.heroPerson[data-hero="pink"] .eng{color:#96224c}
+.heroPerson[data-hero="yellow"] .eng{color:#705400}
+.heroPerson[data-hero="green"] .eng{color:#27623b}
+.heroPerson[data-hero="red"] .eng{color:#a62a3d}
+/* Paper transcript and colorful headline. */
+.shinwoo .transcript .mono{color:#59524d}
+.world .sectionHead h2 em{color:#a92640}
+.heroes .sectionHead h2 em{color:#b32440}
+.interludeCopy h2 strong{color:#ba263e}
+/* Small white-on-pink labels remain crisp as well. */
+.smallbtn.special{background:#b5243d;color:#fff}
+.newsTicker{background:#a7243d}
+/* Small labels and utility bars, verified at phone + desktop widths. */
+.heroRoster .heroPerson:nth-child(1) .eng{color:#9f2138}
+.heroRoster .heroPerson:nth-child(3) .eng{color:#735600}
+.heroRoster .heroPerson:nth-child(4) .eng{color:#28623c}
+.heroRoster .heroPerson:nth-child(5) .eng{color:#94244a}
+.quoteBlock .mono[style]{color:#57514d!important}
+.strip{background:#a8203a}
+.scene .bullet i{background:#a8203a}
+.heroes .sectionHead .index{color:#a9263e}
+.interludeBottom span{color:#a82d48}
+.world .sectionHead p{color:#554841}
+/* In the alternate company-view theme --red became too dark for charcoal panels. */
+body.office .hero h1 .hit,
+body.office .hero .seal,
+body.office #shinwoo .sectionHead .index,
+body.office #shinwoo #swModeTag,
+body.office .footer em,
+body.office .manual .sectionHead .index,
+body.office .manual .sectionHead h2 em{color:#ff9aa4}
+body.office #shinwoo h3 span[style]{color:#ff9aa4!important}
+/* Dynamic popups inject the ranger's original dark accent as an inline style.
+   Lighter tints are needed on the popup's charcoal background. */
+.dialog .heroInfo .mono[style*="#e43d50"]{color:#ff909a!important}
+.dialog .heroInfo .mono[style*="#376fd3"]{color:#91b9ff!important}
+/* Content contrast should not depend on browser theme or mode. */
+#boss-settings,#boss-settings p,#boss-settings h3{color:#252832}
+#play-guide .playCols *{text-shadow:none}
+#sdTheaterVideo{color:#fff}
+</style>
+<style>
+/* V5 world atlas: three independent dossiers in a single section */
+.worldSwitch{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0 18px}
+.worldTab{appearance:none;border:2px solid #2f3036;border-radius:13px;background:#fff8ef;color:#28252c;min-height:92px;padding:16px 14px;cursor:pointer;display:flex;gap:12px;align-items:center;text-align:left;box-shadow:4px 4px 0 #c8bcb1;transition:transform .2s,box-shadow .2s,background .2s;min-width:0}
+.worldTab:hover,.worldTab:focus-visible{transform:translateY(-3px);box-shadow:4px 7px 0 #c8bcb1;outline-color:#ed5163}
+.worldTab[aria-selected="true"]{background:#ffe186;box-shadow:4px 4px 0 #df6c73}
+.worldTab[data-world-tab="association"][aria-selected="true"]{background:#dbe8fd;box-shadow:4px 4px 0 #7899cc}
+.worldTab[data-world-tab="jangmi"][aria-selected="true"]{background:#f8e7f1;box-shadow:4px 4px 0 #d8a8b4}
+.worldTabSymbol{font-size:26px;flex:none;line-height:1}
+.worldTab>span:nth-child(2){display:block;min-width:0;flex:1}
+.worldTab b{font-size:clamp(15px,1.7vw,20px);display:block;line-height:1.23;letter-spacing:-.045em;color:#29242a}
+.worldTab small{font:750 10px/1.5 ui-monospace,monospace;color:#615560;display:block;margin-top:5px;letter-spacing:0}
+.worldTabArrow{font-size:17px;opacity:.65}
+.worldTabPanel[hidden]{display:none!important}
+.worldTabPanel{animation:worldAppear .25s ease both}
+@keyframes worldAppear{from{opacity:.2;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.worldPanelLayout{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:20px;align-items:stretch}
+.worldPanelLayout>.company{min-height:360px;padding:28px;box-shadow:6px 6px 0 #c9bdb0}
+.worldPanelLayout .company .logobox{height:132px;margin-bottom:5px}
+.worldPanelLayout .company .logobox img{max-height:132px;max-width:100%;object-fit:contain}
+.worldPanelLayout .company h3{margin-top:11px}
+.worldPanelLayout>.worldMemo{margin:0;min-height:100%;display:flex;flex-direction:column;justify-content:center;border-style:solid;padding:28px}
+.worldPanelLayout .worldMemo h3{font-size:clamp(20px,3vw,29px);line-height:1.3;color:#2d2227}
+.worldPanelLayout .worldMemo p,.worldPanelLayout .worldMemo b{color:#342c2f}
+.worldMiniTag{margin-top:14px;border-top:1px dashed #ceb7ba;padding-top:13px;color:#66545b;font-size:12px;font-weight:850}
+.worldAssocPanel .assocPaper{margin:0;box-shadow:6px 6px 0 #b3bdce}
+.worldAssocPanel .assocColumns{color:#2d3442}
+.worldAssocPanel .assocColumns h3{color:#24314a}
+.worldBottomNote{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-top:24px;padding:11px 14px;border:1px dashed #b9a9a0;border-radius:8px;background:#fff8ed;color:#665458;font-size:12px}
+.worldBottomNote b{color:#312934}
+.anchorTarget{display:block;height:1px;margin-top:-1px;scroll-margin-top:92px}
+.interludeCopy h2 strong{font-size:clamp(31px,3.8vw,49px);line-height:1.12;white-space:normal;letter-spacing:-.055em}
+.interludeSpeech{display:block;width:fit-content;max-width:100%;transform:rotate(-1deg);color:#24252b}
+.interludeSpeech div{font-size:13px;line-height:1.75;white-space:normal}
+.interludeSpeech div+div{border-top:1px dashed #d9a54d;margin-top:5px;padding-top:5px}
+.interludeSpeech b{color:#aa1832}
+@media(max-width:800px){.worldSwitch{gap:8px}.worldTab{padding:12px 8px;gap:7px;min-height:78px}.worldTabSymbol{font-size:21px}.worldTab b{font-size:14px}.worldTab small{font-size:9px;word-break:break-word}.worldTabArrow{display:none}.worldPanelLayout{grid-template-columns:1fr}.worldPanelLayout>.company{min-height:0}.worldPanelLayout>.worldMemo{min-height:0}}
+@media(max-width:440px){.worldSwitch{gap:6px}.worldTab{min-height:81px;padding:10px 6px;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:5px;border-radius:11px}.worldTabSymbol{font-size:19px}.worldTab b{font-size:clamp(11px,3.2vw,14px);letter-spacing:-.04em}.worldTab small{font-size:8px;line-height:1.4;margin-top:4px}.worldPanelLayout>.company{padding:19px}.worldPanelLayout>.worldMemo{padding:19px}.worldBottomNote{font-size:11px}.interludeCopy h2 strong{font-size:clamp(28px,7.8vw,39px)}.interludeSpeech div{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.worldTabPanel{animation:none}}
+</style><style id="v7-precision">
+html,body{max-width:100%;overflow-x:clip}
+/* V7: Restore the original left-aligned hero title. */
+#top .heroGrid{display:flex;justify-content:flex-start;align-items:center;min-height:450px}
+#top .heroCopy{width:min(100%,760px);max-width:100%;text-align:left;padding:42px 0 48px}
+#top .heroCopy .desc{margin:17px 0 25px;max-width:610px}
+#top .heroNote{justify-content:flex-start}
+#top .heroCopy::before{content:'ROSA / CORONE';position:absolute;z-index:-1;top:-10px;left:3px;transform:rotate(-4deg);font:1000 clamp(54px,10vw,123px)/1 system-ui;color:#ffffff09;letter-spacing:-.065em;pointer-events:none;white-space:nowrap}
+#top h1{font-size:clamp(57px,7.7vw,91px)}
+/* Portrait is now placed immediately above the actual "도신우" name inside the profile file. */
+#shinwoo .shinwooNamePortrait{position:relative;width:100%;margin:12px 0 21px;aspect-ratio:1.06;max-height:405px;overflow:hidden;border-radius:10px;border:2px solid #e5c27d;box-shadow:5px 5px 0 #131a22;background:#18212d}
+#shinwoo .shinwooNamePortrait:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,#0b142bcc);pointer-events:none}
+#shinwoo .shinwooNamePortrait>img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 23%;filter:contrast(1.025)}
+#shinwoo .shinwooNamePortrait figcaption{position:absolute;bottom:11px;left:12px;right:12px;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:6px;color:#fff;flex-wrap:wrap;text-shadow:0 2px 6px #0d1728}
+#shinwoo .shinwooNamePortrait figcaption span{font:850 9px ui-monospace,monospace;letter-spacing:.11em;color:#ffe99e}
+#shinwoo .shinwooNamePortrait figcaption b{font:900 10px ui-monospace,monospace;letter-spacing:.05em}
+#shinwoo .recordLeft h3{margin-top:9px}
+/* A hero group photograph is for faces, not a superimposed logo. */
+#heroes .heroWide .lumenLogo{display:none!important}
+/* Association emblem lives on its own white plate in the organization overview. */
+.worldAssocPanel .assocRibbon img{width:110px;height:78px;object-fit:contain;background:#fffdf9;padding:9px;border-radius:9px;border:2px solid #a8b9df;box-shadow:3px 3px 0 #122341}
+/* Medium-length text in scroll-safe detail panels. */
+.dialog .heroProfileDetails{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:17px}
+.dialog .heroProfileDetails section{min-width:0;border:1px solid #5c687a;background:#243040;border-radius:10px;padding:15px 16px}
+.dialog .heroProfileDetails h4{color:#ffe399;margin:0 0 8px;font-size:11px}
+.dialog .heroProfileDetails p{color:#f1f3f8;font-size:13px;line-height:1.82;overflow-wrap:anywhere}
+.dialog .heroModalTop .heroInfo p{line-height:1.65}
+.dialog .quote{margin-top:15px;color:#fff4dc;font-size:15px;line-height:1.6}
+.heroSecret{font-size:11px;line-height:1.6;color:#ffdc8c;margin:17px 0 0;font-weight:800;text-align:center}
+@media(max-width:800px){
+ #top .heroGrid{min-height:365px;justify-content:flex-start}
+ #top .heroCopy{width:100%;padding:30px 0 36px;text-align:left}
+ #top .heroCopy .desc{margin:15px 0 22px}
+ #top .heroNote{justify-content:flex-start}
+ #shinwoo .shinwooNamePortrait{margin:12px 0 19px;aspect-ratio:1.1;max-height:380px}
+ .dialog .heroProfileDetails{grid-template-columns:1fr;gap:10px}
+ .dialog .heroProfileDetails section{padding:12px 14px}
+ .worldAssocPanel .assocRibbon img{width:90px;height:65px;padding:7px}
+}
+@media(max-width:380px){
+ #top h1{font-size:clamp(47px,12.3vw,62px)}
+ #top .heroCopy::before{font-size:50px;top:10px}
+ #shinwoo .shinwooNamePortrait{aspect-ratio:.96}
+ .worldAssocPanel .assocRibbon img{width:80px;height:59px;padding:6px}
+}
+</style>
+<style id="roco-v8-protection-intro">
+/* Only artwork is protected: links, UI labels, command copy buttons remain usable. */
+img, picture, video[poster], .photobox img, .heroModalTop img {
+ -webkit-user-select:none; user-select:none;
+ -webkit-user-drag:none; -webkit-touch-callout:none;
+}
+.relWarning{color:#9f233a!important;background:#fff1d2;border-left:4px solid #d74a55;padding:9px 12px;border-radius:4px;margin:10px 0 8px!important;line-height:1.7}
+.relWarning strong{color:#8b2137!important}
+.relMulti{color:#443d47!important;font-size:13px;line-height:1.65;margin:8px 0 0!important}
+.codeNameFootnote{margin:12px 0 0;font-size:12px;line-height:1.75;color:#e8b8bb}
+/* A tiny, skippable comic-book security-door entrance; no layout changes. */
+.rocoIntro{display:none;position:fixed;inset:0;z-index:2147483000;overflow:hidden;isolation:isolate;background:#121a2a;opacity:1;transition:opacity .32s ease}
+html.roco-intro-start .rocoIntro{display:block}
+.rocoIntro .introDoor{position:absolute;top:0;bottom:0;width:50.5%;background:repeating-linear-gradient(0deg,transparent 0px,transparent 47px,#ffffff08 48px,#ffffff08 50px),linear-gradient(120deg,#29344a,#121a2a 69%);box-shadow:inset 0 0 0 2px #eb667333;z-index:1;transition:transform 1.12s cubic-bezier(.46,.05,.3,1);will-change:transform}
+.rocoIntro .introDoor.left{left:0;border-right:4px solid #ffcf69}
+.rocoIntro .introDoor.right{right:0;border-left:4px solid #ffcf69}
+.rocoIntro .introCenter{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff4de;text-align:center;display:grid;justify-items:center;gap:7px;z-index:2;transition:opacity .28s ease,transform .48s ease;max-width:95vw}
+.rocoIntro .introRosette{display:grid;place-items:center;width:88px;height:88px;border:3px solid #ffd77c;border-radius:50%;font-size:42px;background:#9f2d43;box-shadow:0 0 0 7px #0e152777,5px 6px 0 #ef6372;animation:introStamp .3s cubic-bezier(.2,1.6,.5,1) both}
+.rocoIntro .introWord{font-family:Impact,"Arial Black",system-ui,sans-serif;font-weight:900;-webkit-text-stroke:1.1px currentColor;letter-spacing:.065em;font-size:clamp(23px,6.4vw,44px);white-space:nowrap;text-shadow:3px 4px 0 #ae344b,0 0 1px #fff4de;background:#151d2c;border:2px solid #ffd77c;border-radius:8px;padding:7px 13px;box-shadow:5px 5px 0 #ae344b;max-width:calc(100vw - 22px)}
+.rocoIntro .introSub{font-size:11px;font-weight:800;letter-spacing:.26em;color:#f9d79a}
+.rocoIntro .introSkip{position:absolute;right:max(16px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:3;background:#fff6e6;color:#2f303a;border:2px solid #282e39;padding:8px 13px;border-radius:8px;font-size:12px;font-weight:900;cursor:pointer}
+html.roco-intro-open .introDoor.left{transform:translateX(-104%)}
+html.roco-intro-open .introDoor.right{transform:translateX(104%)}
+html.roco-intro-reveal .rocoIntro{opacity:0;pointer-events:none}
+html.roco-intro-done .rocoIntro{display:none}
+ .rocoIntro .introRosette img{width:68px;height:68px;object-fit:contain;display:block}
+@keyframes introStamp{from{transform:scale(2);opacity:0}to{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.rocoIntro{display:none!important}.rocoIntro *{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="rocoIntro" aria-hidden="true"><div class="introDoor left"></div><div class="introDoor right"></div><div class="introCenter"><div class="introRosette">✿</div><div class="introWord">ROSA • CORONE</div><div class="introSub">CLASSIFIED · ACCESS GRANTED</div></div><button class="introSkip" type="button" aria-label="오프닝 건너뛰기">입장 건너뛰기 ↗</button></div>
+<script>if(!window.matchMedia||!window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('roco-intro-start');</script>
+
+<header class="sitebar"><div class="wrap"><a aria-label="첫 화면으로" class="brand" href="#top"><img alt="로사 코로네 로고" src="https://moonworld-net.github.io/-/Rosa.webp"/><span><b id="brandName">ROSA · CORONE</b><small id="brandSub">CLASSIFIED PERSONNEL</small></span></a><nav aria-label="목차" class="nav"><a href="#shinwoo">도신우</a><a href="#world" data-world-link="roco">세계관 / 조직</a><a href="#heroes">루멘 파이브</a><a href="#association" data-world-link="association">히어로 협회</a><a href="#manual">플레이 가이드</a></nav></div></header>
+<div aria-hidden="true" class="ribbon"><div class="track"><span>ROSA CORONE / CONFIDENTIAL ACCESS</span><span>오늘의 세계 정복 : 결재 대기 중</span><span>장미물산 / 정기 납품 정상 운행</span><span>QUIET END / AWAITING ORDERS</span><span>ROSA CORONE / CONFIDENTIAL ACCESS</span><span>오늘의 세계 정복 : 결재 대기 중</span><span>장미물산 / 정기 납품 정상 운행</span><span>QUIET END / AWAITING ORDERS</span></div></div>
+
+<nav class="mobileQuicknav" aria-label="모바일 빠른 메뉴">
+  <a href="#shinwoo"><span>❤️</span> 신우</a>
+  <a href="#world"><span>🌹</span> 로코</a>
+  <a href="#interlude"><span>🎬</span> 극장</a>
+  <a href="#heroes"><span>⭐</span> 루멘</a>
+  <a href="#manual"><span>📋</span> 가이드</a>
+</nav>
+<main>
+<section class="hero" id="top"><div class="wrap heroGrid"><div class="heroCopy"><span class="stamp">보스 전용 · 사내 기밀 페이지</span><h1><span class="ruby">도신우,</span><span class="hit">부탁해요<span class="heart">♥</span></span><br/>보스!</h1><p class="desc"><strong>히어로 앞에서는 종말을 고하는 자.</strong><br/> 장미물산에선 성질 더러운 보안운영팀 직원.<br/><b>보스 앞에서는? 제 등부터 내미는 최정예 에로 번견.</b><br/>충성심에는 사심이 가득하지만, 임무는 누구보다 확실하게 해냅니다.</p><button class="action" id="bossApprove" type="button">신우 출격 승인하기 <span class="arrow">↗</span></button><div class="heroNote"><div class="seal">BOSS<br/>ONLY</div><span>보스의 명령 : 최우선 처리<br/>본 문서는 외부 유출 시 책임지지 않습니다.</span></div></div></div></section>
+<div class="strip"><div class="wrap"><span class="symbol">✳</span><b>세계 정복은 근무 시간 내에. 퇴근 전 보고서는 꼭 작성할 것!</b><span class="symbol">✳</span></div></div>
+<section class="section" id="shinwoo"><div class="wrap"><header class="sectionHead inView"><div><div class="index">01 / PERSONAL FILE</div><h2>우리 조직의<br/><em>가장 시끄러운 비밀병기.</em></h2></div><p>히어로에게는 재앙, 보스에게는 자발적 발판. 싸움은 잘하고 충성심은 몹시 불순한 최정예 특수전투원.</p></header><div class="recordGrid"><div class="recordLeft inView"><div class="top"><span class="pill"><i></i> SPECIAL UNIT / ACTIVE</span><img alt="로사 코로네 로고" class="cardLogo" src="https://moonworld-net.github.io/-/Rosa.webp"/></div><figure class="shinwooNamePortrait" aria-label="도신우 소개 사진">
+  <img src="https://moonworld-net.github.io/-/Sinum.webp" alt="도신우 변신 전 일러스트" loading="lazy" referrerpolicy="no-referrer">
+  <figcaption><span>ROCO / PERSONAL FILE</span><b>QUIET END · 001</b></figcaption>
+</figure><h3>도신우<span style="color:var(--red)">.</span></h3><div class="under">전투력은 최상위권. 보스 한정 사심은 측정 불가.</div><dl class="statlist"><dt>나이 / 신장</dt><dd>29세 / 193cm</dd><dt>소속</dt><dd>로사 • 코로네 특수전투원</dd><dt>공식 코드네임</dt><dd>종말을 고하는 자<br/><small style="color:#e9afba;font-size:.86em">독음: 종언자</small><br/><small style="color:#e9afba;font-size:.86em">현장 호칭: Quiet End (콰이어트 엔드)</small></dd><dt>위장 직책</dt><dd>장미물산 보안운영팀</dd><dt>전투 능력</dt><dd>충격 흡수 / 축적 / 방출</dd><dt>필살기</dt><dd>FINAL NOTICE</dd></dl><p class="codeNameFootnote">출격 명단은 ‘종말을 고하는 자’, 현장 무전은 ‘콰이어트 엔드’. 덕분에 실무진의 보고서 작성이 조금 더 복잡해졌습니다.</p></div><div class="recordRight inView"><div class="quoteBlock"><span class="tag mono">INTERCEPTED VOICE / BOSS-ONLY</span><strong id="swQuote">“보스으❤️ 그딴 의자 말고 제 등 위에 앉으시죠!!! 제가 훨씬 튼튼하거든요!”</strong><span class="mono" style="color:#918a86">VOICE TRANSCRIPT · EXCERPT</span></div><div aria-label="신우의 근무 상황" class="tabs" role="tablist"><button aria-selected="true" data-swmode="org" role="tab" type="button">🌹 조직 근무</button><button aria-selected="false" data-swmode="office" role="tab" type="button">📦 위장 근무</button><button aria-selected="false" data-swmode="combat" role="tab" type="button">⚡ 전투 현장</button></div><div aria-live="polite" class="modeDesc"><div class="mono" id="swModeTag">ROCO / SPECIAL OPERATIVE</div><p id="swModeText">다른 놈들 앞에서는 사납고 도발적이다. 보스의 지시에는 숨김없이 들뜨지만, 전술 판단과 독자 행동 능력은 여전하다.</p></div><div class="actionPanel"><button class="smallbtn special" id="praise" type="button">♥ 칭찬 한마디</button><button class="smallbtn" id="finalNotice" type="button">⚡ FINAL NOTICE</button></div></div></div>
+</div></section>
+<div class="dividerZig"></div>
+<section class="world" id="world"><div class="wrap">
+<header class="sectionHead inView"><div><div class="index">02 / THE THREE FACES</div><h2>같은 도시,<br><em>서로 다른 세 출입증.</em></h2></div><p>악당은 세계 정복을 꿈꾸고, 회사는 납품을 하고, 히어로는 정의를 지킵니다. 각각의 기밀 서류를 열어 보세요.</p></header>
+<div class="worldSwitch inView" role="tablist" aria-label="조직별 세계관 기록">
+<button type="button" class="worldTab is-active" data-world-tab="roco" id="world-tab-roco" role="tab" aria-controls="world-panel-roco" aria-selected="true"><span class="worldTabSymbol">🌹</span><span><b>로사 • 코로네</b><small>악의 조직 / NIGHT SHIFT</small></span><span class="worldTabArrow">↗</span></button>
+<button type="button" class="worldTab" data-world-tab="jangmi" id="world-tab-jangmi" role="tab" aria-controls="world-panel-jangmi" aria-selected="false" tabindex="-1"><span class="worldTabSymbol">📦</span><span><b>장미물산</b><small>위장 기업 / DAY SHIFT</small></span><span class="worldTabArrow">↗</span></button>
+<button type="button" class="worldTab" data-world-tab="association" id="world-tab-association" role="tab" aria-controls="world-panel-association" aria-selected="false" tabindex="-1"><span class="worldTabSymbol">⭐</span><span><b>히어로 협회</b><small>정의의 관청 / OFFICIAL</small></span><span class="worldTabArrow">↗</span></button>
+</div>
+<span id="association" class="anchorTarget" aria-hidden="true"></span>
+<div class="worldTabPanels inView">
+<div class="worldTabPanel is-active" id="world-panel-roco" role="tabpanel" aria-labelledby="world-tab-roco" data-world-panel="roco">
+<div class="worldPanelLayout"><article class="company"><span class="label">TOP SECRET / ORGANIZATION</span><div class="logobox"><img src="https://moonworld-net.github.io/-/Rosa.webp" alt="로사 코로네 붉은 장미 왕관 문장"></div><h3>로사 • 코로네</h3><p>도시를 장악하고 세계 정복을 꿈꾸는 거대 악의 조직. 통칭 <b>로코</b>. 불법 병기 개발, 시설 점령, 히어로 요격, 대규모 파괴 공작까지 다양한 작전을 벌입니다.</p><div class="foot"><span>✳ VILLAIN ORGANIZATION</span><span>기밀 등급 █████</span></div></article>
+<div class="worldMemo"><div class="memoTop"><span class="mono">🌹 ROSA • CORONE / OFFICE NOTICE</span><span>인사 총무팀</span></div><h3>악의 조직에도 출근 시간은 있습니다.</h3><p>세계 정복도 예산 없이는 불가능한 법. 출격하려면 승인을 받아야 하고, 작전이 실패하면 경위서를 제출해야 합니다. 파손 장비는 반납하고, 야근 수당은 별도로 청구할 것.</p><p><b>악당이라고 회사 생활까지 피해 갈 수는 없습니다.</b></p><div class="worldMiniTag">📋 작전 승인 · 장비 반납 · 경위서 제출</div></div></div>
+</div>
+<div class="worldTabPanel" id="world-panel-jangmi" role="tabpanel" aria-labelledby="world-tab-jangmi" data-world-panel="jangmi" hidden>
+<div class="worldPanelLayout"><article class="company public"><span class="label">REGISTERED SUPPLIER / PUBLIC</span><div class="logobox"><img src="https://moonworld-net.github.io/-/Jangm.webp" alt="장미물산 금색 월계관과 붉은 장미 로고"></div><h3>장미물산</h3><p>히어로 협회의 <b>공식 소모품 공급업체</b>로 등록된 로코의 위장 기업. 시설 경비, 출입 통제, 물자 납품, 병기 호송을 담당하며 거래처의 신뢰를 얻고 있습니다.</p><div class="foot"><span>✳ OFFICIAL BUSINESS</span><span>미수금 0건 희망</span></div></article>
+<div class="worldMemo whiteMemo"><div class="memoTop"><span class="mono">📦 JANGMI / SECURITY DESK</span><span>보안운영팀</span></div><h3>직원증 한 장, 정체는 두 개.</h3><p>장미물산 보안운영팀의 도신우는 협회 직원들에게 얼굴과 이름이 알려진 납품 담당자입니다. 반면 헬멧을 쓴 <b>‘콰이어트 엔드’</b>는 히어로들이 최상위 경계 대상으로 분류한 적.</p><p>그 둘이 같은 사람이라는 사실은 아무도 연결하지 못합니다. <b>오늘도 세금계산서는 정상 발행됩니다.</b></p><div class="worldMiniTag">🪪 직원증 정상 · 정체 은폐 양호</div></div></div>
+</div>
+<div class="worldTabPanel worldAssocPanel" id="world-panel-association" role="tabpanel" aria-labelledby="world-tab-association" data-world-panel="association" hidden>
+<div class="assocPaper"><div class="assocRibbon"><img alt="히어로 협회 공식 루멘 파이브 마크" src="https://moonworld-net.github.io/-/LumenFive_logo-2.webp"><div><b>히어로 협회</b><span class="mono">HERO ASSOCIATION · OFFICIAL RECORD</span></div><span class="assocSeal">APPROVED ★</span></div>
+<div class="assocColumns"><div><h3>정의를 지키려면 먼저 결재부터!</h3><p>시민의 안전과 도시의 평화를 수호하기 위해 설립된 히어로 관리 기관. 히어로 등록부터 작전 배정, 출격 승인, 장비 보급, 예산 집행, 언론 대응까지 도맡습니다.</p><p>협회가 관리하는 대표적인 팀은 <b>루멘 파이브</b>. 전장의 활약만큼이나 안정적인 조직 운영도 중요합니다.</p></div><div><h3>현장 히어로와 홍보팀의 끝없는 전쟁</h3><p>전투력뿐 아니라 시민의 신뢰, 방송 이미지, 대중적 인지도까지 중요한 평가 항목입니다. 현장 대원과 홍보 담당 직원 사이에 마찰이 끊이지 않는 것도 그 때문이지요.</p><p>로코의 정체는 아직 모르면서도, 협회의 서류와 납품 검수는 놀라울 만큼 꼼꼼합니다.</p><div class="assocFooter">※ 정의를 지키는 데에도 예산과 결재가 필요합니다. 📎</div></div></div></div>
+</div>
+</div>
+<div class="worldBottomNote"><span>📁 <b>열람 권한:</b> 보스 전용</span><span>파일 세 개 · 비밀은 하나가 아닙니다.</span></div>
+</div></section>
+<section class="heroes" id="heroes"><div class="wrap"><header class="sectionHead inView"><div><div class="index">03 / LUMEN FIVE · CIVILIAN IDENTITIES</div><h2>오늘의 고객님은<br/><em>루멘 파이브!</em></h2></div><p>전장에서는 숙적, 납품처에서는 VIP 고객. 얼굴을 누르면 기밀 프로필이 열려요.</p></header><div class="heroWide inView"><img alt="전투복을 착용한 루멘 파이브 다섯 명의 단체 사진" src="https://moonworld-net.github.io/-/Lumen5.webp"/><span class="wideText">LUMEN FIVE · HERO ASSOCIATION · ON DUTY</span></div><div aria-label="루멘 파이브 인물 선택" class="heroRoster" id="heroRoster"></div><div class="heroesNote inView"><div><b>히어로 협회 공식 납품업체 : 장미물산</b><p>출격 승인은 까다롭지만, 납품 대금 결제는 잘 부탁드립니다.</p></div><span class="pill"><i></i> 거래처 명단 / 05</span></div></div></section>
+
+
+<section class="interlude" id="interlude" aria-labelledby="interludeTitle">
+  <div class="wrap">
+    <div class="interludeTicker" aria-hidden="true"><span>★ SPECIAL SHOW ★ ROCO STAFF THEATER ★ SPECIAL SHOW ★ ROCO STAFF THEATER ★</span></div>
+    <div class="interludeStage inView">
+      <div class="interludeTop">
+        <span>♥ ROSA CORONE · EXTRA CLIP NO. 01</span>
+        <span class="nowShowing"><i></i> NOW SHOWING</span>
+      </div>
+      <div class="interludeGrid">
+        <div class="interludeCopy">
+          <div class="interludeSticker" aria-hidden="true">✦ 방영중 ✦</div>
+          <span class="interludeOver">업무 중 잠깐 쉬어가는 시간!</span>
+          <h2 id="interludeTitle"><span>~ 막간 극장 ~</span><strong>이의 있음!<br>기각한다!</strong></h2>
+          <p>악의 조직 최정예 전투원 도신우, 당당하게 이의를 제기하다! 그러나 돌아온 것은 루멘 파이브의 만장일치 기각?!</p>
+          <div class="interludeSpeech"><div><b>🌹 신우</b> “이의 있음!!!”</div><div><b>⭐ 루멘 파이브</b> “기각한다!!!”</div></div>
+          <p class="interludeMeta">🎟️ 출연: SD 도신우 × 루멘 파이브<br/>⏱️ 상영 시간: 10초</p>
+          <span class="interludeSecret">*로사 • 코로네 × 루멘 파이브 특별 단편*</span>
+        </div>
+        <div class="interludePlayerSide">
+          <div class="theaterMarquee"><b>ROCO × LUMEN CINEMA</b><span>★ ★ ★</span></div>
+          <div class="theaterScreen">
+            <video id="sdTheaterVideo" aria-label="10초 막간 극장: 신우 이의 있음, 루멘 파이브 기각한다" controls playsinline preload="none">
+              <source src="https://moonworld-net.github.io/-/from-PixAI-2075783000043574610.mp4" type="video/mp4"/>
+              이 브라우저에서는 동영상을 재생할 수 없습니다.
+            </video>
+          </div>
+          <div class="theaterControls"><span><i class="theaterLed"></i> 사내 극장 · EP.001 / 00:10</span><a href="https://moonworld-net.github.io/-/from-PixAI-2075783000043574610.mp4" target="_blank" rel="noopener noreferrer">영상만 보기 ↗</a></div>
+          <p class="theaterGuide">▶ 재생 버튼을 누르면 상영 시작! 소리가 나올 수 있어요.</p>
+        </div>
+      </div>
+      <div class="interludeBottom" aria-hidden="true"><span>✦</span> OBJECTION OVERRULED! <span>✦</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="manual" id="manual"><div class="wrap"><header class="sectionHead inView"><div><div class="index">05 / BOSS STARTER PACK</div><h2>보스님, <em>오늘도 결재 부탁해요.</em></h2></div><p>여간부의 하루에는 정해진 정답이 없습니다. 신우를 부려 먹든, 히어로와 친해지든, 세계 정복에 도전하든. 오늘은 보스가 골라요.</p></header><aside class="bossFixed inView" id="boss-settings">
+<div class="bossFixedIcon">★</div>
+<div><span class="mono bossTiny">BOSS PROFILE / 고정 설정</span>
+<h3>🌹 당신은 악의 여간부!</h3>
+<p>세계 정복을 꿈꾸는 악의 조직, <b>로사 • 코로네!</b></p>
+<p>당신은 이 조직의 당당한 여간부이자 도신우의 직속 상관입니다. 로코는 총수가 이끌지만, 신우의 임무와 작전은 당신이 직접 지휘합니다.</p>
+<p>총수의 금지옥엽 외동딸? 밑바닥부터 올라온 야심가? 아니면 남들에게 말 못 할 비밀을 가진 간부?</p>
+<p>출신도, 경력도, 나이도, 외모도! 성격과 능력까지 전부 자유입니다.</p>
+<p>다만 한 가지는 확실합니다.</p>
+<p><b>당신에게는 아주 유능하고, 아주 성질 더럽고, 아주 이상한 직속 부하가 하나 있다는 것!</b></p>
+<p>오늘도 그 남자는 보스의 명령을 기다리고 있습니다.</p>
+<p>(물론 얌전히 기다리는 건 아닙니다😇)</p></div>
+</aside><div class="playGuide inView" id="play-guide"><div class="playIntro"><span class="mono">♥ THE LITTLE BOSS PLAYBOOK</span><h3>악의 여간부 생활 가이드 ♡</h3><p>세계 정복은 잠깐 미뤄두고, 오늘은 무슨 사고를 쳐 볼까요? 마음에 드는 난이도를 골라 보세요.</p></div><div class="playCols">
+<article class="playPanel"><header><span>01</span><h4>보스와 에로 번견</h4><small>VERY EASY ♡</small></header><div class="playRows"><div><span>신우한테 대놓고 플러팅하기</span><b>VERY EASY ♡</b></div><div><span>신우를 개(??)처럼 부려먹기</span><b>본인 만족도 높음</b></div><div><span>신우 혼내기</span><b>신우가 매우 좋아함</b></div><div><span>신우를 인간 의자로 쓰기</span><b>전용 좌석 확보</b></div><div><span>신우에게 하루 동안 칭찬 금지령 내리기</span><b>신우 기준 VERY HARD</b></div></div></article>
+<article class="playPanel"><header><span>02</span><h4>위험한 연애</h4><small>HIGH RISK</small></header><div class="playRows"><div><span>신우의 눈을 피해 루멘 대원들과 연애하기</span><b>VERY HARD</b></div><div><span>히어로 협회 회식에 위장 잠입하기</span><b>정체 노출 주의!</b></div><div><span>히어로 한 명을 로코로 스카우트하기</span><b>VERY HARD</b></div></div></article>
+<article class="playPanel"><header><span>03</span><h4>본격 악당 업무</h4><small>NIGHTMARE?</small></header><div class="playRows"><div><span>히어로 협회에 가서 바가지 씌우기</span><b>매출 상승 ♡</b></div><div><span>로사 • 코로네 이름으로 봉사활동하기</span><b>조직 이미지 대혼란</b></div><div><span>루멘 파이브를 악덕 히어로로 누명 씌우기</span><b>언론 대응 필수</b></div><div><span>총수에게 쿠데타 일으키기</span><b>NIGHTMARE</b></div></div></article>
+</div><p class="playFoot">※ 이 밖의 행보도 전부 자유! 신우는 일단 보스 편부터 들 준비가 되어 있습니다. 🌹</p></div><div class="ticketGrid"><div class="ticket inView"><span class="mono">♥ RELATIONSHIP POLICY / 관계 안내</span><h3>연애의 상대는 보스가 정해요.</h3><div class="qrow"><span>도신우</span><b>보스 직속 특수전투원</b></div><div class="qrow"><span>루멘 파이브 전원</span><b>연애 가능</b></div><div class="qrow"><span>교제 확정 전</span><b>신우의 질투·견제 가능</b></div><div class="qrow"><span>타인과 교제 확정 후</span><b>신우는 연애 개입 중단</b></div><div class="cut"></div><p class="relCopy">누구와 사랑에 빠지든 당신의 선택입니다. 신우는 다른 상대와 교제가 확정되면 물러나지만, 여전히 당신의 직속 부하로서 충성을 다합니다.</p><p class="relWarning"><strong>단, 교제가 확정되기 전까지는 신우가 아주 귀찮게 굴 수 있습니다.</strong></p></div><div class="ticket dark inView">
+  <span class="mono">✳ OPERATIONS / SKILLS · 06</span>
+  <h3>스킬 사용 안내</h3>
+  <p class="skillIntro">원하는 명령어를 대화창에 직접 입력하세요.</p>
+  <div class="commandExplainers">
+<div><b>/일기</b><p>인물의 일기와 개인 기록을 열람합니다. 상대와 상황에 따라 기록이 달라집니다.</p></div>
+<div><b>/커뮤</b><p>전 세계 악당들이 모인 BLACKLINE의 게시글과 댓글을 구경합니다.</p></div>
+<div><b>/커맨드</b><p>보스가 관제 화면을 열어 작전을 지휘하고 신우의 출격 요청·현장 보고를 확인합니다.</p></div>
+<div><b>/방송</b><p>로사 • 코로네의 대외 선전 방송과 특별 중계를 송출합니다.</p></div>
+<div><b>/명함</b><p>장미물산·로사 • 코로네·루멘 파이브의 명함을 주고받거나 확인합니다.</p></div>
+<div><b>/사내톡</b><p>해당 소속의 개인·단체 채팅을 확인합니다. 두 사내망은 서로 분리됩니다.</p></div>
+</div>
+</div></div></div></section>
+</main>
+ <aside class="rocoBuildNote" aria-label="제작 환경 및 음향 안내"><div class="wrap"><p>본 캐릭터의 HTML 및 JSX는 모바일 환경에서 제작되었습니다.</p><p>기기 및 화면 크기에 따라 일부 표시가 달라질 수 있습니다.</p><p>서사에 따라 JSX가 자동 출력 될 수 있습니다.</p><p class="rocoAudioNote"><span aria-hidden="true">🔊</span> 일부 JSX에는 효과음이 포함되어 있으니 음량에 유의해 주세요.</p></div></aside> <footer class="footer"><div class="wrap"><div class="footBrand"><img alt="로사 코로네 로고" src="https://moonworld-net.github.io/-/Rosa.webp"/><div><strong>ROSA · CORONE</strong><small>《도신우, 부탁해요♡보스!》 · MADE FOR THE BOSS</small></div></div><span class="mono">세계 정복은 근무 시간 내에.<br/><em>END OF FILE / TO BE CONTINUED ♡</em></span></div><div class="footerCopyright">© MOONWORLD</div></footer>
+<div aria-hidden="true" class="dialogBackdrop" id="dialogBackdrop" role="presentation"><div aria-label="비밀 기록" aria-modal="true" class="dialog" id="dialog" role="dialog"><button aria-label="닫기" class="close" id="dialogClose" type="button">✕</button><div id="dialogContent"></div></div></div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div><div aria-hidden="true" class="sparks" id="sparks"></div>
+<script>
+(function(){'use strict';
+ const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+ const A={"shinwoo": "https://moonworld-net.github.io/-/Sinum.webp", "group": null, "haeon": "https://moonworld-net.github.io/-/Pink.webp", "mujin": "https://moonworld-net.github.io/-/Red.webp", "seoryeong": "https://moonworld-net.github.io/-/Blue.webp", "ido": "https://moonworld-net.github.io/-/Green.webp", "taesan": "https://moonworld-net.github.io/-/Yel.webp", "rosa": "https://moonworld-net.github.io/-/Rosa.webp", "jangmi": "https://moonworld-net.github.io/-/Jangm.webp", "lumen": "https://moonworld-net.github.io/-/LumenFive_logo-2.webp", "video": "https://moonworld-net.github.io/-/from-PixAI-2075783000043574610.mp4"}, heroes=[{"name":"권무진","code":"RED / LEADER","age":"29세 · 187cm · 팀장 · 근접전","color":"#e43d50","image":"https://moonworld-net.github.io/-/Red.webp","short":"악은 적! 적은 멸!","summary":"정의에 타협이 없는 루멘 파이브의 리더. 악당을 보면 가장 먼저 앞으로 나선다.","quote":"“악은 적! 적은 멸!”","person":"정의감이 지나치게 뜨거운 열혈 리더. 악당을 발견하면 정면 돌파부터 선택하며, 아군에게도 원칙을 엄격하게 요구한다. 단호한 만큼 고집도 만만치 않다.","combat":"근접전 특화. 최전선에서 적의 공격을 받아내고 돌파구를 만든다. 위험한 순간에도 쉽게 물러서지 않는다."},{"name":"한서령","code":"BLUE / VICE LEADER","age":"29세 · 177cm · 부팀장 · 전략/저격","color":"#376fd3","image":"https://moonworld-net.github.io/-/Blue.webp","short":"차가운 계산, 더 차가운 독설","summary":"날카로운 독설과 계산으로 팀을 움직이는 냉철한 부팀장.","quote":"“말은 끝났습니까? 사실관계부터 확인하죠.”","person":"감정에 휩쓸리는 동료들 사이에서 상황을 정리하는 현실주의자. 말수는 적고 예의는 지키지만, 빈틈을 지적할 때만큼은 가차 없다. 늘 한발 앞서 계산하는 편이다.","combat":"전략 설계와 정밀 저격을 담당한다. 전장 전체를 관찰하다 상대의 움직임에서 허점을 찾아내는 두뇌형 전투원."},{"name":"마태산","code":"YELLOW / POWER","age":"26세 · 191cm · 괴력","color":"#b2890e","image":"https://moonworld-net.github.io/-/Yel.webp","short":"주먹도 의리도 정면 돌파","summary":"괴력과 승부욕으로 밀어붙이는 호쾌한 돌격대장.","quote":"“콰이어트 엔드! 오늘이야말로 제대로 붙자!”","person":"목소리도 크고 성질도 급하지만, 의리 하나는 확실한 옐로. 복잡하게 머리 굴리는 걸 싫어한다. 콰이어트 엔드를 혼자 라이벌로 정해놓고 마주칠 때마다 승부를 걸어온다.","combat":"압도적인 완력으로 적의 방어선을 무너뜨린다. 돌파력은 최고 수준이지만, 승부욕에 불붙으면 제어하기가 쉽지 않다."},{"name":"주이도","code":"GREEN / TECH","age":"24세 · 179cm · 기술/해킹","color":"#4c9963","image":"https://moonworld-net.github.io/-/Green.webp","short":"귀찮지만 다 아는 천재","summary":"귀찮다는 말을 달고 사는 천재 해커. 손끝으로 전황을 뒤집는다.","quote":"“직접 가야 해요? 원격으로 끝내면 안 되나.”","person":"가능하면 의자에서 일어나지 않고 모든 일을 해결하고 싶은 그린. 평소에는 무기력하지만 흥미로운 장비나 기술이 나타나면 눈빛이 달라진다. 능력에 비해 의욕이 너무 부족하다.","combat":"해킹, 보안 침투, 통신과 장비 지원 담당. 직접 뛰어드는 대신 적의 시스템에 구멍을 내서 팀의 길을 연다."},{"name":"윤해온","code":"PINK / SUPPORT","age":"30세 · 167cm · 최고령 · 방어/회복","color":"#e46aa7","image":"https://moonworld-net.github.io/-/Pink.webp","short":"방송용 천사, 비번엔 헤비 스모커","summary":"얼굴은 막내, 실제로는 최고령. 카메라 앞뒤의 온도 차가 엄청나다.","quote":"“여러분의 하루, 루멘 핑크와 함께❤️”\n“아, 씨발. 못 해먹겠네.”","person":"30세지만 앳된 외모 때문에 막내 취급을 받는 루멘 핑크. 검은 뿌리가 보이는 분홍 염색모에, 협회의 이미지 정책 때문에 여장하고 활동한다. 방송에서는 “여러분의 하루, 루멘 핑크와 함께❤️”라며 애교를 팔지만 카메라가 꺼지면 욕부터 나오는 헤비 스모커.","combat":"방어와 회복을 맡는 핵심 지원 전력. 동료의 부상은 확실히 챙기지만, 치료하면서 쏟아내는 잔소리는 꽤 맵다."}];
+ const backdrop=$('#dialogBackdrop'),content=$('#dialogContent'),closer=$('#dialogClose');
+ let prevFocus=null,toastTimer=null;
+ function openDialog(html){prevFocus=document.activeElement;content.innerHTML=html;backdrop.classList.add('open');backdrop.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closer.focus();}
+ function closeDialog(){const v=content.querySelector('video');if(v)v.pause();backdrop.classList.remove('open');backdrop.setAttribute('aria-hidden','true');document.body.style.overflow='';if(prevFocus&&prevFocus.focus)prevFocus.focus();}
+ closer.addEventListener('click',closeDialog);backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&backdrop.classList.contains('open'))closeDialog();});
+ function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2400)}
+ function sparks(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;const area=$('#sparks');for(let i=0;i<18;i++){const x=document.createElement('span'),r=Math.PI*2*i/18,d=100+Math.random()*155;x.className='spark';x.style.setProperty('--tx',Math.cos(r)*d+'px');x.style.setProperty('--ty',Math.sin(r)*d+'px');x.style.background=i%3?'#f34254':'#ffe26e';area.append(x);setTimeout(()=>x.remove(),800)}}
+ $('#bossApprove').addEventListener('click',()=>{sparks();openDialog('<span class="mark">ROSA CORONE / APPROVAL GRANTED</span><h3>출격 승인!<br>보스의 명령 접수 완료.</h3><p>사나운 최정예 전투원이 기다렸다는 듯 몸을 일으킵니다. 명령을 받자마자 이미 작전 경로부터 계산하는 중.</p><p style="font-weight:900;font-size:16px;color:#fff">“보스!!! 저만 믿으세요. 싹 쓸어버리고 돌아올게요!!”</p><div class="bigStamp">APPROVED</div><div class="redbar"></div>')});
+ let praiseCnt=0;
+ $('#praise').addEventListener('click',()=>{sparks();const l=['“히이익❤️ 보스! 저 잘했죠?! 그럼 오늘은 제 등 위에 앉아주실래요?!”','“보스으❤️ 다음 명령은요?! 뭐든 시켜 주세요!”','“그런 의자 말고 저 쓰세요, 보스! 허리도 튼튼한데!”'];$('#swQuote').textContent=l[praiseCnt++%l.length];toast('♥ 신우의 기분이 위험할 만큼 좋아졌습니다.')});
+ $('#finalNotice').addEventListener('click',()=>{openDialog('<span class="mark">QUIET END / LIMIT RELEASE</span><h3>FINAL NOTICE</h3><p>흡수·축적한 충격을 집중 방출하는 결정타. 축적량이 한계를 넘으면 과부하에 주의해야 합니다.</p><div class="bigStamp">WARNING</div><div class="redbar"></div>')});
+ const modes={
+ org:{tag:'ROCO / SPECIAL OPERATIVE',quote:'“보스으❤️ 그딴 의자 말고 제 등 위에 앉으시죠!!!”',desc:'대외적으로는 성질 더럽고 도발적인 특수전투원. 보스 앞에서는 먼저 엎드려 등을 내밀 정도로 불순한 충성심을 감추지 않는다. 하지만 작전 지휘와 독자 임무 수행은 언제나 유능하다.'},
+ office:{tag:'JANGMI MULSAN / SECURITY',quote:'“장미물산 보안운영팀입니다. 납품 확인 서명 부탁드립니다.”',desc:'히어로 협회에서 얼굴이 알려진 납품·보안 직원. 시설 경비, 출입 통제, 장비 호송까지 깔끔히 처리한다. 물론 콰이어트 엔드라는 사실은 누구도 모른다.'},
+ combat:{tag:'QUIET END / FINAL NOTICE',quote:'“비켜. 이제부터 내 차례야.”',desc:'적의 공격에서 충격을 흡수·축적한 뒤 연타나 집중 일격으로 방출한다. 필살기는 FINAL NOTICE. 축적량의 한계와 과부하 위험이 있지만 전술 판단은 냉정하다.'}
+ };
+ $$('[data-swmode]').forEach(b=>b.addEventListener('click',()=>{$$('[data-swmode]').forEach(x=>x.setAttribute('aria-selected',String(x===b)));const m=modes[b.dataset.swmode];$('#swQuote').textContent=m.quote;$('#swModeTag').textContent=m.tag;$('#swModeText').textContent=m.desc}));
+
+ const roster=$('#heroRoster');
+ function clean(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+ heroes.forEach((h,i)=>{const b=document.createElement('button');b.className='heroPerson';b.type='button';b.style.setProperty('--hero',h.color);b.setAttribute('aria-label',h.name+' 인물 기록 열기');b.innerHTML='<div class="photobox"><img loading="lazy" src="'+h.image+'" alt="'+h.name+' 변신 전 모습" referrerpolicy="no-referrer"></div><div class="colorbar"></div><div class="details"><span class="eng">'+h.code+'</span><h3>'+h.name+'</h3><p>'+h.short+'</p><span class="right">상세 프로필 열기 ↗</span></div>';
+ const formattedQuote = h.name==='윤해온' ? '<span class="pinkTagline">'+clean(h.quote.split('\n')[0])+'</span><span class="pinkOffDuty">'+clean(h.quote.split('\n')[1])+'</span>' : clean(h.quote); b.addEventListener('click',()=>openDialog('<span class="mark">LUMEN FIVE / PERSONNEL DATA 0'+(i+1)+'</span><div class="heroModalTop"><img src="'+h.image+'" referrerpolicy="no-referrer" alt="'+h.name+'"><div class="heroInfo"><span class="mono" style="color:'+h.color+'">'+h.code+'</span><h3>'+h.name+'</h3><p>'+h.age+'</p></div></div><div class="quote">'+formattedQuote+'</div><div class="heroProfileDetails"><section><h4>PERSONNEL / 첫인상</h4><p>'+clean(h.person)+'</p></section><section><h4>COMBAT / 전투</h4><p>'+clean(h.combat)+'</p></section></div><p class="heroSecret">✦ 추가 기록은 직접 만나 확인해 주세요 ✦</p>'));
+ roster.append(b)});
+ 
+ if('IntersectionObserver' in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.06});$$('.inView').forEach(e=>obs.observe(e))}else{$$('.inView').forEach(e=>e.classList.add('show'))}
+})();
+</script>
+
+<script>
+(function(){'use strict';
+ var tabs=Array.from(document.querySelectorAll('[data-world-tab]'));
+ var panels=Array.from(document.querySelectorAll('[data-world-panel]'));
+ var names=['roco','jangmi','association'];
+ function showWorld(name, focus){
+  if(names.indexOf(name)===-1)return;
+  tabs.forEach(function(t){var chosen=t.dataset.worldTab===name;t.setAttribute('aria-selected',chosen?'true':'false');t.tabIndex=chosen?0:-1;t.classList.toggle('is-active',chosen);if(chosen && focus)t.focus()});
+  panels.forEach(function(p){var chosen=p.dataset.worldPanel===name;p.hidden=!chosen;p.classList.toggle('is-active',chosen)});
+ }
+ tabs.forEach(function(tab,i){
+  tab.addEventListener('click',function(){showWorld(tab.dataset.worldTab,false)});
+  tab.addEventListener('keydown',function(e){var idx=i;if(e.key==='ArrowRight')idx=(i+1)%3;else if(e.key==='ArrowLeft')idx=(i+2)%3;else if(e.key==='Home')idx=0;else if(e.key==='End')idx=2;else return;e.preventDefault();showWorld(names[idx],true)})
+ });
+ document.querySelectorAll('[data-world-link]').forEach(function(link){link.addEventListener('click',function(){showWorld(link.dataset.worldLink,false)})});
+ function fromHash(){if(location.hash==='#association')showWorld('association',false)}
+ window.addEventListener('hashchange',fromHash);fromHash();
+})();
+</script>
+
+<script id="roco-v8-protection-intro-script">
+(function(){'use strict';
+  // Use the existing embedded Rosa Corone symbol, not a substitute glyph.
+  var brandSymbol=document.querySelector('.brand img');
+  var introSymbol=document.querySelector('.rocoIntro .introRosette');
+  if(brandSymbol && introSymbol){var symbol=brandSymbol.cloneNode(true);symbol.alt='';symbol.draggable=false;introSymbol.textContent='';introSymbol.appendChild(symbol)}
+  // Deterrence, not DRM: the OS can still take screenshots or record the screen.
+  function isArt(target){ return target && target.closest && !!target.closest('img, picture, video[poster]'); }
+  document.addEventListener('contextmenu',function(e){ if(isArt(e.target)) e.preventDefault(); },true);
+  document.addEventListener('dragstart',function(e){ if(isArt(e.target)) e.preventDefault(); },true);
+  document.addEventListener('selectstart',function(e){ if(isArt(e.target)) e.preventDefault(); },true);
+  document.querySelectorAll('img').forEach(function(el){el.setAttribute('draggable','false')});
+  // Dynamic hero cards are created later. MutationObserver is unnecessary because
+  // all three events above are delegated to the document.
+  var root=document.documentElement;
+  var skip=document.querySelector('.rocoIntro .introSkip');
+  var finished=false;
+  var t1,t2,t3;
+  function done(){if(finished)return;finished=true;clearTimeout(t1);clearTimeout(t2);clearTimeout(t3);root.classList.add('roco-intro-done');root.classList.remove('roco-intro-start','roco-intro-open','roco-intro-reveal')}
+  if(skip)skip.addEventListener('click',done);
+  if(root.classList.contains('roco-intro-start')){
+    t1=setTimeout(function(){if(!finished)root.classList.add('roco-intro-open')},360);
+    t2=setTimeout(function(){if(!finished)root.classList.add('roco-intro-reveal')},1520);
+    t3=setTimeout(done,1890);
+  }
+})();
+</script>
+</body></html>
